@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Yekan Bakh FaNum */
+
+@font-face {
+  font-family: YekanBakh-Thin;
+  font-weight: 100;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Thin.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-Light;
+  font-weight: 300;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Light.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-Medium;
+  font-weight: 500;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Medium.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-SemiBold;
+  font-weight: 600;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-DemiBold.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-Bold;
+  font-weight: 700;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-ExtraBold;
+  font-weight: 800;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-ExtraBold.woff') format("woff");
+}
+
+@font-face {
+  font-family: YekanBakh-Black;
+  font-weight: 900;
+  src: url('../src/fonts/YekanBakhFaNum/YekanBakhFaNum-Black.woff') format("woff");
+}
+
+/* Morabba */
+
+@font-face {
+  font-family: Morabba-Thin;
+  font-weight: 100;
+  src: url('../src/fonts/Morabba/Morabba-Thin.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-Light;
+  font-weight: 300;
+  src: url('../src/fonts/Morabba/Morabba-Light.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/Morabba/Morabba-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-Medium;
+  font-weight: 500;
+  src: url('../src/fonts/Morabba/Morabba-Medium.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-SemiBold;
+  font-weight: 600;
+  src: url('../src/fonts/Morabba/Morabba-SemiBold.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-Bold;
+  font-weight: 700;
+  src: url('../src/fonts/Morabba/Morabba-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-ExtraBold;
+  font-weight: 800;
+  src: url('../src/fonts/Morabba/Morabba-ExtraBold.woff') format("woff");
+}
+
+@font-face {
+  font-family: Morabba-Black;
+  font-weight: 900;
+  src: url('../src/fonts/Morabba/Morabba-Black.woff') format("woff");
+}
+
+/* Montserrat */
+
+@font-face {
+  font-family: Montserrat-Regular;
+
+  src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf') format("trueType");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+
+  src: url('../src/fonts/Montserrat/Montserrat-Bold.ttf') format("trueType");
+}
+
+/*  */
+
+.font-normal {
+  font-weight: 400;
+  @apply rtl:font-yekanBakhRegular ltr:font-MontserratRegular;
+}
+
+.font-medium {
+  font-weight: 500;
+  @apply rtl:font-yekanBakhMedium ltr:font-MontserratRegular;
+}
+
+.font-semibold {
+  font-weight: 600;
+  @apply rtl:font-yekanBakhSemiBold ltr:font-MontserratBold;
+}
+
+.font-bold {
+  font-weight: 700;
+  @apply rtl:font-yekanBakhBold ltr:font-MontserratBold;
+}
+
+.font-extrabold {
+  font-weight: 800;
+  @apply rtl:font-yekanBakhExtraBold ltr:font-MontserratBold;
+}
+
+.font-black {
+  font-weight: 900;
+  @apply rtl:font-yekanBakhBlack ltr:font-MontserratBold;
+}
+
+.font-MorabbaExtraBold {
+  font-family: Morabba-ExtraBold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: YekanBakh-Regular !important;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* global styles */
+a {
+  cursor: pointer;
+  transition: all .4s
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.transition {
+  @apply transition-all duration-300;
+}
+
+#overlay {
+  backdrop-filter: blur(19.600000381469727px);
+  position: fixed;
+  background: #FFFFFF70;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+#overlay.active {
+  opacity: 100%;
+  visibility: visible;
+}
+.accordionBtn:hover,.accordionBtn.active{
+  background-color: #2422200A;
+}
+.accordionBtn img:last-child{
+  transition: all .4s;
+}
+.accordionBtn.active img:last-child{
+  transform: rotate(0deg);
+}
+.accordionContent{
+  max-height: 0;
+  transition: all .4s;
+  overflow: hidden;
+}
+.accordionContent.active{
+  max-height: 2000px;
+  padding-bottom: 20px;
+}
+.bg-gradient-1 {
+  /* background: linear-gradient(180deg, rgba(110, 169, 118, 0) 0%, rgba(109, 169, 117, 0.3886) 47.4%, rgba(255, 255, 255, 0.58) 100%); */
+  background: linear-gradient(180deg, rgba(35, 51, 38, 0) 0%, #233326 100%);
+}
+
+.bg-gradient-2 {
+  background: linear-gradient(228.39deg, #E1EDE4 -69.69%, #FFFFFF 178.12%);
+}
+
+.bg-gradient-3 {
+  background: linear-gradient(90deg, #223426 0%, #5E8C68 100%);
+}
+
+.bg-blur-1 {
+  backdrop-filter: blur(20.653593063354492px)
+}
+
+.bg-blur-2 {
+  backdrop-filter: blur(14px);
+}
+
+.reverse {
+  @apply ltr:[transform:rotateY(0deg)] rtl:[transform:rotateY(180deg)]
+}
+
+/* swiper effect */
+.data_imagesContBottomTop {
+  transform: translate(0, 450px);
+  transition: all .4s;
+}
+
+.banner .swiper-slide-active img.data_imagesContBottomTop {
+  transform: translate(0, 0);
+}
+
+/* number input */
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* برای فایرفاکس */
+  appearance: textfield;
+  /* برای مرورگرهای مدرن */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* برای کروم و سافاری */
+  margin: 0;
+  /* حذف margin پیش‌فرض */
+}
+
+/* mobile menu */
+
+#hamIcon.active svg:last-child {
+  display: block;
+}
+
+#hamIcon.active svg:first-child {
+  display: none;
+}
+
+.mobileMenu {
+  right: -350px;
+  transition: all .4s;
+  z-index: 999;
+  border: 0.5px solid #F5EFEB66;
+  backdrop-filter: blur(160px);
+  box-shadow: 0px 64px 64px -32px #6625008F;
+}
+
+.mobileMenu.active {
+  right: 0;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+/* scroll */
+.noscroll {
+  scrollbar-width: none;
+  /* برای Firefox */
+  -ms-overflow-style: none;
+  /* برای IE و Edge */
+}
+
+.noscroll::-webkit-scrollbar {
+  display: none;
+  /* برای Chrome, Safari و Opera */
+}
+
+/* box shadow */
+
+.shadow-1 {
+  box-shadow: 1px 1px 15.2px 0px #22342666;
+}
+
+/*  */
+.ltrReverse {
+  @apply ltr:[transform:rotateY(180deg)];
+}
+
+/* header */
+
+header ul li a.active {
+  @apply text-primary;
+}
+
+/* responsive */
+
+@media (max-width: 1280px) {
+  .sidebar {
+    box-shadow: 0 0 33px -3px #00000061;
+  }
+}
+
+@media (max-width: 640px) {}
