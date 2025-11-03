@@ -193,31 +193,40 @@ a {
   visibility: hidden;
   cursor: pointer;
 }
+
 #overlay.active {
   opacity: 100%;
   visibility: visible;
 }
-.accordionBtn:hover,.accordionBtn.active{
+
+.accordionBtn:hover,
+.accordionBtn.active {
   background-color: #2422200A;
 }
-.accordionBtn img:last-child{
+
+.accordionBtn img:last-child {
   transition: all .4s;
 }
-.accordionBtn.active img:last-child{
+
+.accordionBtn.active img:last-child {
   transform: rotate(0deg);
 }
-.accordionContent{
+
+.accordionContent {
   max-height: 0;
   transition: all .4s;
   overflow: hidden;
 }
-.accordionContent.active{
+
+.accordionContent.active {
   max-height: 2000px;
   padding-bottom: 20px;
 }
+
 .bg-gradient-1 {
   /* background: linear-gradient(180deg, rgba(110, 169, 118, 0) 0%, rgba(109, 169, 117, 0.3886) 47.4%, rgba(255, 255, 255, 0.58) 100%); */
   background: linear-gradient(180deg, rgba(35, 51, 38, 0) 0%, #233326 100%);
+
 }
 
 .bg-gradient-2 {
@@ -226,6 +235,10 @@ a {
 
 .bg-gradient-3 {
   background: linear-gradient(90deg, #223426 0%, #5E8C68 100%);
+}
+
+.bg-gradient-4 {
+  background: linear-gradient(180deg, #658A6C 0%, #233326 100%);
 }
 
 .bg-blur-1 {
@@ -264,6 +277,12 @@ input[type="number"]::-webkit-outer-spin-button {
   /* برای کروم و سافاری */
   margin: 0;
   /* حذف margin پیش‌فرض */
+}
+
+/* header */
+.dropdown {
+  background: linear-gradient(180deg, rgba(166, 180, 169, 0.85) 0%, rgba(34, 52, 38, 0.85) 100%);
+  backdrop-filter: blur(7.599999904632568px);
 }
 
 /* mobile menu */
@@ -311,7 +330,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .shadow-1 {
   box-shadow: 1px 1px 15.2px 0px #22342666;
 }
-
+.shadow-2{
+  filter: drop-shadow(0px 8px 25px 0px #20202026);
+}
 /*  */
 .ltrReverse {
   @apply ltr:[transform:rotateY(180deg)];
