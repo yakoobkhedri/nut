@@ -119,10 +119,17 @@ function convertPageNumbersToPersian() {
 // accordion
 
 let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
+let accordionBtn2 = Array.from(document.getElementsByClassName('accordionBtn2'));
 
 accordionBtn.forEach((item)=>{
   item.addEventListener('click', function () {
     item.classList.toggle('active');
     item.nextElementSibling.classList.toggle('active');
   })
-})
+});
+accordionBtn2.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+});

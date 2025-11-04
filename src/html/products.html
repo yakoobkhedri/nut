@@ -451,50 +451,281 @@
 
   <main>
 
-    <section class="mt-[130px]">
+    <section class="lg:mt-[130px] mt-16">
       <div class="max-w-content mx-auto px-4">
-        <div class="flex items-center gap-3 text-sm">
+        <div class="hidden lg:flex items-center gap-3 text-sm">
           <a class="hover:text-[#606C38]">صفحه اصلی</a>
           <img alt="icon" src="../img/icons/arrow-left.svg" class="flex-shrink-0">
           <p class="text-[#606C38]">دسته‌بندی محصولات</p>
+        </div>
+        <div class="flex lg:hidden items-center justify-between gap-2">
+          <div class="flex items-center gap-1 text-sm">
+            <p class="text-[#676F71]">تعداد محصولات:</p>
+            <p class="text-[#606C38]">۵۶ کالا</p>
+          </div>
+          <div class="flex items-center gap-2">
+           <div id="openFilter" class="group cursor-pointer w-10 h-10 rounded-lg flex-center border border-[#676F71] flex-center transition-all hover:bg-primary">
+             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="transition-all group-hover:fill-white" d="M7.29327 15.1C6.97327 15.1 6.65993 15.02 6.3666 14.86C5.77993 14.5334 5.4266 13.94 5.4266 13.2734V9.74002C5.4266 9.40669 5.2066 8.90669 4.99993 8.65336L2.5066 6.01336C2.0866 5.59336 1.7666 4.87336 1.7666 4.33336V2.80002C1.7666 1.73336 2.57327 0.900024 3.59993 0.900024H12.3999C13.4133 0.900024 14.2333 1.72002 14.2333 2.73336V4.20002C14.2333 4.90002 13.8133 5.69336 13.4199 6.08669L10.5333 8.64002C10.2533 8.87336 10.0333 9.38669 10.0333 9.80002V12.6667C10.0333 13.26 9.65993 13.9467 9.19327 14.2267L8.27327 14.82C7.97327 15.0067 7.63327 15.1 7.29327 15.1ZM3.59993 1.90002C3.13327 1.90002 2.7666 2.29336 2.7666 2.80002V4.33336C2.7666 4.58002 2.9666 5.06002 3.21993 5.31336L5.75994 7.98669C6.09994 8.40669 6.43327 9.10669 6.43327 9.73336V13.2667C6.43327 13.7 6.73327 13.9134 6.85993 13.98C7.13994 14.1334 7.47993 14.1334 7.73993 13.9734L8.6666 13.38C8.85327 13.2667 9.03994 12.9067 9.03994 12.6667V9.80002C9.03994 9.08669 9.3866 8.30002 9.8866 7.88002L12.7399 5.35336C12.9666 5.12669 13.2399 4.58669 13.2399 4.19336V2.73336C13.2399 2.27336 12.8666 1.90002 12.4066 1.90002H3.59993Z" fill="#676F71"/>
+<path class="transition-all group-hover:fill-white" d="M4.00044 7.16664C3.9071 7.16664 3.82044 7.13997 3.73377 7.09331C3.50044 6.94664 3.4271 6.63331 3.57377 6.39997L6.86044 1.13331C7.0071 0.899972 7.31377 0.826639 7.5471 0.973306C7.78044 1.11997 7.85377 1.42664 7.7071 1.65997L4.42044 6.92664C4.3271 7.07997 4.1671 7.16664 4.00044 7.16664Z" fill="#676F71"/>
+<script xmlns=""/></svg>
+           </div>
+                      <div class="group cursor-pointer w-10 h-10 rounded-lg flex-center border border-[#676F71] flex-center transition-all hover:bg-primary">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="transition-all group-hover:fill-white" d="M14 5.16663H2C1.72667 5.16663 1.5 4.93996 1.5 4.66663C1.5 4.39329 1.72667 4.16663 2 4.16663H14C14.2733 4.16663 14.5 4.39329 14.5 4.66663C14.5 4.93996 14.2733 5.16663 14 5.16663Z" fill="#676F71"/>
+<path class="transition-all group-hover:fill-white" d="M12 8.5H4C3.72667 8.5 3.5 8.27333 3.5 8C3.5 7.72667 3.72667 7.5 4 7.5H12C12.2733 7.5 12.5 7.72667 12.5 8C12.5 8.27333 12.2733 8.5 12 8.5Z" fill="#676F71"/>
+<path class="transition-all group-hover:fill-white" d="M9.33366 11.8334H6.66699C6.39366 11.8334 6.16699 11.6067 6.16699 11.3334C6.16699 11.06 6.39366 10.8334 6.66699 10.8334H9.33366C9.60699 10.8334 9.83366 11.06 9.83366 11.3334C9.83366 11.6067 9.60699 11.8334 9.33366 11.8334Z" fill="#676F71"/>
+<script xmlns=""/></svg>
+           </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="mt-[46px]">
       <div class="max-w-content mx-auto px-4">
-        <div class="flex gap-7">
-          <div class="w-[318px] flex-shrink-0">
+        <div class="flex xl:gap-7 gap-4">
+          <div id="filterSidebar" class="max-w-[318px] w-full flex-shrink-0 top-0 bottom-0 h-full overflow-auto bg-white shadow-lg lg:shadow-none z-30 lg:z-0 fixed lg:sticky lg:top-5">
+            <div class="px-3 pt-5 flex lg:hidden items-center gap-2 pb-4 border-b border-[#E7E7E8]">
+              <svg id="closeFilter" class="cursor-pointer group" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="transition-all group-hover:fill-red-600" d="M16.0675 15.1826C16.1256 15.2406 16.1717 15.3096 16.2031 15.3854C16.2345 15.4613 16.2507 15.5426 16.2507 15.6247C16.2507 15.7069 16.2345 15.7882 16.2031 15.864C16.1717 15.9399 16.1256 16.0089 16.0675 16.0669C16.0095 16.125 15.9405 16.1711 15.8647 16.2025C15.7888 16.2339 15.7075 16.2501 15.6253 16.2501C15.5432 16.2501 15.4619 16.2339 15.386 16.2025C15.3102 16.1711 15.2412 16.125 15.1832 16.0669L10.0003 10.8833L4.81753 16.0669C4.70026 16.1842 4.5412 16.2501 4.37535 16.2501C4.2095 16.2501 4.05044 16.1842 3.93316 16.0669C3.81588 15.9496 3.75 15.7906 3.75 15.6247C3.75 15.4589 3.81588 15.2998 3.93316 15.1826L9.11675 9.99974L3.93316 4.81692C3.81588 4.69965 3.75 4.54059 3.75 4.37474C3.75 4.20888 3.81588 4.04983 3.93316 3.93255C4.05044 3.81527 4.2095 3.74939 4.37535 3.74939C4.5412 3.74939 4.70026 3.81527 4.81753 3.93255L10.0003 9.11614L15.1832 3.93255C15.3004 3.81527 15.4595 3.74939 15.6253 3.74939C15.7912 3.74939 15.9503 3.81527 16.0675 3.93255C16.1848 4.04983 16.2507 4.20888 16.2507 4.37474C16.2507 4.54059 16.1848 4.69965 16.0675 4.81692L10.8839 9.99974L16.0675 15.1826Z" fill="#0B0C17"/>
+<script xmlns=""/></svg>
+              <p class="text-[#23242E]">فیلترها</p>
+            </div>
+            <form class="sticky top-5 lg:border border-[#D1D4D4] lg:border-b-4 rounded-2xl px-3 py-6">
+              <div class="flex items-center justify-between gap-2 pb-4 border-b border-[#E7E7E8]">
+                <p class="text-[#23242E]">فیلترهای اعمال شده</p>
+                <div
+                  class="cursor-pointer group hover:text-red-600 transition-all flex items-center gap-2 text-sm text-[#606C38] relative">
+                  <input type="reset" class="absolute w-full h-full inset-0 cursor-pointer opacity-0">
+                  <p>حذف همه</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition-all group-hover:fill-red-600"
+                      d="M12.854 12.146C12.9005 12.1925 12.9373 12.2476 12.9625 12.3083C12.9876 12.369 13.0006 12.4341 13.0006 12.4998C13.0006 12.5655 12.9876 12.6305 12.9625 12.6912C12.9373 12.7519 12.9005 12.8071 12.854 12.8535C12.8076 12.9 12.7524 12.9368 12.6917 12.962C12.631 12.9871 12.566 13.0001 12.5003 13.0001C12.4346 13.0001 12.3695 12.9871 12.3088 12.962C12.2481 12.9368 12.193 12.9 12.1465 12.8535L8.00028 8.70666L3.85403 12.8535C3.76021 12.9474 3.63296 13.0001 3.50028 13.0001C3.3676 13.0001 3.24035 12.9474 3.14653 12.8535C3.05271 12.7597 3 12.6325 3 12.4998C3 12.3671 3.05271 12.2399 3.14653 12.146L7.2934 7.99979L3.14653 3.85354C3.05271 3.75972 3 3.63247 3 3.49979C3 3.36711 3.05271 3.23986 3.14653 3.14604C3.24035 3.05222 3.3676 2.99951 3.50028 2.99951C3.63296 2.99951 3.76021 3.05222 3.85403 3.14604L8.00028 7.29291L12.1465 3.14604C12.2403 3.05222 12.3676 2.99951 12.5003 2.99951C12.633 2.99951 12.7602 3.05222 12.854 3.14604C12.9478 3.23986 13.0006 3.36711 13.0006 3.49979C13.0006 3.63247 12.9478 3.75972 12.854 3.85354L8.70715 7.99979L12.854 12.146Z"
+                      fill="#606C38" />
+                    <script xmlns="" />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-1 flex-wrap">
+                <div
+                  class="flex-grow rounded-[100px] flex items-center justify-between bg-[#FAFAFA] gap-2 text-[#3C3D45] text-xs py-2 px-3 border border-[#E7E7E8]">
+                  <p>لورم متن: لورم ایپسوم متن</p>
+                  <svg class="group cursor-pointer" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition-all group-hover:fill-red-600"
+                      d="M9.64052 9.10953C9.67536 9.14437 9.703 9.18573 9.72186 9.23126C9.74071 9.27678 9.75042 9.32557 9.75042 9.37484C9.75042 9.42412 9.74071 9.47291 9.72186 9.51843C9.703 9.56395 9.67536 9.60531 9.64052 9.64016C9.60568 9.675 9.56432 9.70263 9.5188 9.72149C9.47327 9.74035 9.42448 9.75005 9.37521 9.75005C9.32594 9.75005 9.27714 9.74035 9.23162 9.72149C9.1861 9.70263 9.14474 9.675 9.1099 9.64016L6.00021 6.53L2.89052 9.64016C2.82016 9.71052 2.72472 9.75005 2.62521 9.75005C2.5257 9.75005 2.43026 9.71052 2.3599 9.64016C2.28953 9.56979 2.25 9.47435 2.25 9.37484C2.25 9.27533 2.28953 9.1799 2.3599 9.10953L5.47005 5.99984L2.3599 2.89015C2.28953 2.81979 2.25 2.72435 2.25 2.62484C2.25 2.52533 2.28953 2.4299 2.3599 2.35953C2.43026 2.28916 2.5257 2.24963 2.62521 2.24963C2.72472 2.24963 2.82016 2.28916 2.89052 2.35953L6.00021 5.46969L9.1099 2.35953C9.18026 2.28916 9.2757 2.24963 9.37521 2.24963C9.47472 2.24963 9.57016 2.28916 9.64052 2.35953C9.71089 2.4299 9.75042 2.52533 9.75042 2.62484C9.75042 2.72435 9.71089 2.81979 9.64052 2.89015L6.53036 5.99984L9.64052 9.10953Z"
+                      fill="#54555D" />
+                    <script xmlns="" />
+                  </svg>
+                </div>
+                <div
+                  class="flex-grow rounded-[100px] flex items-center justify-between bg-[#FAFAFA] gap-2 text-[#3C3D45] text-xs py-2 px-3 border border-[#E7E7E8]">
+                  <p>لورم : لورم </p>
+                  <svg class="group cursor-pointer" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition-all group-hover:fill-red-600"
+                      d="M9.64052 9.10953C9.67536 9.14437 9.703 9.18573 9.72186 9.23126C9.74071 9.27678 9.75042 9.32557 9.75042 9.37484C9.75042 9.42412 9.74071 9.47291 9.72186 9.51843C9.703 9.56395 9.67536 9.60531 9.64052 9.64016C9.60568 9.675 9.56432 9.70263 9.5188 9.72149C9.47327 9.74035 9.42448 9.75005 9.37521 9.75005C9.32594 9.75005 9.27714 9.74035 9.23162 9.72149C9.1861 9.70263 9.14474 9.675 9.1099 9.64016L6.00021 6.53L2.89052 9.64016C2.82016 9.71052 2.72472 9.75005 2.62521 9.75005C2.5257 9.75005 2.43026 9.71052 2.3599 9.64016C2.28953 9.56979 2.25 9.47435 2.25 9.37484C2.25 9.27533 2.28953 9.1799 2.3599 9.10953L5.47005 5.99984L2.3599 2.89015C2.28953 2.81979 2.25 2.72435 2.25 2.62484C2.25 2.52533 2.28953 2.4299 2.3599 2.35953C2.43026 2.28916 2.5257 2.24963 2.62521 2.24963C2.72472 2.24963 2.82016 2.28916 2.89052 2.35953L6.00021 5.46969L9.1099 2.35953C9.18026 2.28916 9.2757 2.24963 9.37521 2.24963C9.47472 2.24963 9.57016 2.28916 9.64052 2.35953C9.71089 2.4299 9.75042 2.52533 9.75042 2.62484C9.75042 2.72435 9.71089 2.81979 9.64052 2.89015L6.53036 5.99984L9.64052 9.10953Z"
+                      fill="#54555D" />
+                    <script xmlns="" />
+                  </svg>
+                </div>
+                <div
+                  class="flex-grow rounded-[100px] flex items-center justify-between bg-[#FAFAFA] gap-2 text-[#3C3D45] text-xs py-2 px-3 border border-[#E7E7E8]">
+                  <p>لورم : لورم </p>
+                  <svg class="group cursor-pointer" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition-all group-hover:fill-red-600"
+                      d="M9.64052 9.10953C9.67536 9.14437 9.703 9.18573 9.72186 9.23126C9.74071 9.27678 9.75042 9.32557 9.75042 9.37484C9.75042 9.42412 9.74071 9.47291 9.72186 9.51843C9.703 9.56395 9.67536 9.60531 9.64052 9.64016C9.60568 9.675 9.56432 9.70263 9.5188 9.72149C9.47327 9.74035 9.42448 9.75005 9.37521 9.75005C9.32594 9.75005 9.27714 9.74035 9.23162 9.72149C9.1861 9.70263 9.14474 9.675 9.1099 9.64016L6.00021 6.53L2.89052 9.64016C2.82016 9.71052 2.72472 9.75005 2.62521 9.75005C2.5257 9.75005 2.43026 9.71052 2.3599 9.64016C2.28953 9.56979 2.25 9.47435 2.25 9.37484C2.25 9.27533 2.28953 9.1799 2.3599 9.10953L5.47005 5.99984L2.3599 2.89015C2.28953 2.81979 2.25 2.72435 2.25 2.62484C2.25 2.52533 2.28953 2.4299 2.3599 2.35953C2.43026 2.28916 2.5257 2.24963 2.62521 2.24963C2.72472 2.24963 2.82016 2.28916 2.89052 2.35953L6.00021 5.46969L9.1099 2.35953C9.18026 2.28916 9.2757 2.24963 9.37521 2.24963C9.47472 2.24963 9.57016 2.28916 9.64052 2.35953C9.71089 2.4299 9.75042 2.52533 9.75042 2.62484C9.75042 2.72435 9.71089 2.81979 9.64052 2.89015L6.53036 5.99984L9.64052 9.10953Z"
+                      fill="#54555D" />
+                    <script xmlns="" />
+                  </svg>
+                </div>
+                <div
+                  class="flex-grow rounded-[100px] flex items-center justify-between bg-[#FAFAFA] gap-2 text-[#3C3D45] text-xs py-2 px-3 border border-[#E7E7E8]">
+                  <p>لورم : لورم </p>
+                  <svg class="group cursor-pointer" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition-all group-hover:fill-red-600"
+                      d="M9.64052 9.10953C9.67536 9.14437 9.703 9.18573 9.72186 9.23126C9.74071 9.27678 9.75042 9.32557 9.75042 9.37484C9.75042 9.42412 9.74071 9.47291 9.72186 9.51843C9.703 9.56395 9.67536 9.60531 9.64052 9.64016C9.60568 9.675 9.56432 9.70263 9.5188 9.72149C9.47327 9.74035 9.42448 9.75005 9.37521 9.75005C9.32594 9.75005 9.27714 9.74035 9.23162 9.72149C9.1861 9.70263 9.14474 9.675 9.1099 9.64016L6.00021 6.53L2.89052 9.64016C2.82016 9.71052 2.72472 9.75005 2.62521 9.75005C2.5257 9.75005 2.43026 9.71052 2.3599 9.64016C2.28953 9.56979 2.25 9.47435 2.25 9.37484C2.25 9.27533 2.28953 9.1799 2.3599 9.10953L5.47005 5.99984L2.3599 2.89015C2.28953 2.81979 2.25 2.72435 2.25 2.62484C2.25 2.52533 2.28953 2.4299 2.3599 2.35953C2.43026 2.28916 2.5257 2.24963 2.62521 2.24963C2.72472 2.24963 2.82016 2.28916 2.89052 2.35953L6.00021 5.46969L9.1099 2.35953C9.18026 2.28916 9.2757 2.24963 9.37521 2.24963C9.47472 2.24963 9.57016 2.28916 9.64052 2.35953C9.71089 2.4299 9.75042 2.52533 9.75042 2.62484C9.75042 2.72435 9.71089 2.81979 9.64052 2.89015L6.53036 5.99984L9.64052 9.10953Z"
+                      fill="#54555D" />
+                    <script xmlns="" />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-6">
+                <div class="mb-4">
+                  <div
+                    class="cursor-pointer accordionBtn2 pb-4 border-b border-[#E7E7E8] flex items-center justify-between gap-2 text-[#23242E]">
+                    <p>لورم ایپسوم متن</p>
+                    <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.28 5.46665C13.1533 5.46665 13.0267 5.51332 12.9267 5.61332L8.58001 9.95999C8.26001 10.28 7.74001 10.28 7.42001 9.95999L3.07335 5.61332C2.88001 5.41999 2.56001 5.41999 2.36668 5.61332C2.17335 5.80665 2.17335 6.12665 2.36668 6.31999L6.71335 10.6667C7.42001 11.3733 8.57335 11.3733 9.28668 10.6667L13.6333 6.31999C13.8267 6.12665 13.8267 5.80665 13.6333 5.61332C13.5333 5.51999 13.4067 5.46665 13.28 5.46665Z"
+                        fill="#85858B" />
+                      <script xmlns="" />
+                    </svg>
+                  </div>
+                  <div class="accordionContent2">
+                    <div class="py-4">
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم ایپسوم متن</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم ایپسوم</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم متن</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم ایپسوم</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم متن</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <div
+                    class="cursor-pointer accordionBtn2 pb-4 border-b border-[#E7E7E8] flex items-center justify-between gap-2 text-[#23242E]">
+                    <p>لورم ایپسوم متن</p>
+                    <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.28 5.46665C13.1533 5.46665 13.0267 5.51332 12.9267 5.61332L8.58001 9.95999C8.26001 10.28 7.74001 10.28 7.42001 9.95999L3.07335 5.61332C2.88001 5.41999 2.56001 5.41999 2.36668 5.61332C2.17335 5.80665 2.17335 6.12665 2.36668 6.31999L6.71335 10.6667C7.42001 11.3733 8.57335 11.3733 9.28668 10.6667L13.6333 6.31999C13.8267 6.12665 13.8267 5.80665 13.6333 5.61332C13.5333 5.51999 13.4067 5.46665 13.28 5.46665Z"
+                        fill="#85858B" />
+                      <script xmlns="" />
+                    </svg>
+                  </div>
+                  <div class="accordionContent2">
+                    <div class="py-4">
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم ایپسوم متن</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم ایپسوم</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم متن</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم ایپسوم</p>
+                      </label>
+                      <label class="text-sm flex items-center gap-2 cursor-pointer mb-4 last:mb-0">
+                        <input type="checkbox"
+                          class="w-5 h-5 transition-all rounded border border-[#CECED1] cursor-pointer appearance-none checked:bg-primary checked:border-primary checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDZMOSAxN0w0IDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K')] bg-center bg-no-repeat bg-contain">
+                        <p>لورم متن</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pt-2.5 flex items-center justify-between gap-2 pb-[13px] pr-[13px] border-b border-[#E7E7E8]">
+                  <div class="flex items-center gap-1">
+                    <p>فقط کالاهای موجود</p>
+                    <img alt="img" src="../img/image 1 (2).png" class="w-[26px] h-[26px]">
+                  </div>
 
+                  <label class="inline-flex items-center cursor-pointer border border-[#7D7D7D] rounded-[38px]">
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div
+                      class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] peer-checked:after:bg-white after:bg-[#757575] after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary dark:peer-checked:bg-primary">
+                    </div>
+                  </label>
+
+                </div>
+                <div class="mt-6">
+                  <div
+                    class="cursor-pointer accordionBtn2 pb-4 border-b border-[#E7E7E8] flex items-center justify-between gap-2 text-[#23242E]">
+                    <p>قیمت</p>
+                    <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.28 5.46665C13.1533 5.46665 13.0267 5.51332 12.9267 5.61332L8.58001 9.95999C8.26001 10.28 7.74001 10.28 7.42001 9.95999L3.07335 5.61332C2.88001 5.41999 2.56001 5.41999 2.36668 5.61332C2.17335 5.80665 2.17335 6.12665 2.36668 6.31999L6.71335 10.6667C7.42001 11.3733 8.57335 11.3733 9.28668 10.6667L13.6333 6.31999C13.8267 6.12665 13.8267 5.80665 13.6333 5.61332C13.5333 5.51999 13.4067 5.46665 13.28 5.46665Z"
+                        fill="#85858B" />
+                      <script xmlns="" />
+                    </svg>
+                  </div>
+                  <div class="accordionContent2">
+                    <div class="pt-4">
+                      <div class="relative">
+                        <div class="h-0.5 bg-[#CECED1]"></div>
+                        <div class="flex items-center absolute right-0 top-0 bottom-0">
+                          <div class="w-2 h-2 rounded-full bg-[#59493B] cursor-pointer"></div>
+                          <div class="h-0.5 bg-[#6D6D74] w-11"></div>
+                          <div class="w-2 h-2 rounded-full bg-[#59493B] cursor-pointer"></div>
+                        </div>
+                      </div>
+                      <div class="mt-4 flex items-center justify-between gap-[18px]">
+                        <div
+                          class="py-[11px] px-[18px] flex items-center justify-center gap-1 rounded-lg border border-[#CECED1] text-[#6D6D74] text-xs">
+                          <p>1,000,000</p>
+                          <p>تومان</p>
+                        </div>
+                        <p class="text-[#9D9EA2] text-sm flex-shrink-0">تا</p>
+                        <div
+                          class="py-[11px] px-[18px] flex items-center justify-center gap-1 rounded-lg border border-[#CECED1] text-[#6D6D74] text-xs">
+                          <p>5,000,000</p>
+                          <p>تومان</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[30px] lg:hidden flex items-center justify-between gap-[10px]">
+                <button class="text-[#9D9EA2] rounded-lg bg-[#E7E7E8] h-12 w-1/2 flex-grow px-2">انصراف</button>
+                <button class="text-white rounded-lg bg-primary transition-all hover:bg-secondary h-12 w-1/2 flex-grow px-2">اعمال فیلتر</button>
+              </div>
+            </form>
           </div>
           <div class="flex-grow">
-            <div class="grid grid-cols-3 gap-x-[21px] gap-y-[88px]">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-x-[21px] gap-y-[61px] md:gap-y-[88px]">
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -502,30 +733,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (2).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -533,30 +764,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (3).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -564,30 +795,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (4).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -595,30 +826,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (5).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -626,61 +857,61 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (6).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </a>
-               <a>
+              <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -688,30 +919,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (2).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -719,30 +950,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (3).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -750,30 +981,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (4).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -781,30 +1012,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (5).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -812,30 +1043,30 @@
               </a>
               <a>
                 <div
-                  class="rounded-md md:rounded-2xl border border-gray p-1.5 md:p-4 pb-1.5 md:pb-5 pt-0.5 md:pt-4 border-b-4 hover:border-primary transition-all">
+                  class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
                   <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1 (6).png"
-                    class="drop-shadow-xl md:w-[216px] md:h-[216px] h-20 w-20 -mt-11 mx-auto rounded-full">
+                    class="drop-shadow-xl w-[216px] h-[216px] -mt-11 mx-auto rounded-full">
                   <div class="mt-9">
                     <div class="flex items-center justify-between gap-2">
-                      <p class="md:text-sm text-[6px] text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
+                      <p class="text-sm text-[#52595A] line-clamp-1">لورم ایپسوم متن</p>
                       <div class="flex items-center gap-2">
-                        <p class="md:text-sm text-[6px] text-[#676F71]">۴.۳</p>
+                        <p class="text-sm text-[#676F71]">۴.۳</p>
                         <img alt="img" src="../img/icons/Vector.svg" class="flex-shrink-0 w-[5px] md:w-auto">
                       </div>
                     </div>
-                    <p class="mt-1 md:text-sm text-[6px] text-[#676F71] leading-[160%]">
+                    <p class="mt-1 text-sm text-[#676F71] leading-[160%]">
                       لورم ایپسوم متن ساختگی
                     </p>
                   </div>
                   <div class="md:mt-6 mt-4 flex items-end justify-between gap-2">
                     <div
-                      class="rounded-2xl bg-[#F87171] w-6 md:w-14 md:h-8 h-4 flex-center md:text-sm text-[6px] text-white border-2 border-[#FDF2F6]">
+                      class="rounded-2xl bg-[#F87171] w-14 h-8 flex-center text-sm text-white border-2 border-[#FDF2F6]">
                       ۳۰%</div>
                     <div>
-                      <p class="md:text-sm text-[6px] text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
+                      <p class="text-sm text-left text-[#676F71] line-through mb-1">۲,۴۰۰,۰۰۰</p>
                       <div class="flex items-end gap-1">
-                        <p class="text-[#292C2D] text-[5px] md:text-base">۱,۶۴۰,۰۰۰ </p>
-                        <p class="text-[#292C2D] md:text-sm text-[6px]">تومان</p>
+                        <p class="text-[#292C2D] text-base">۱,۶۴۰,۰۰۰ </p>
+                        <p class="text-[#292C2D] text-sm">تومان</p>
                       </div>
                     </div>
                   </div>
@@ -843,6 +1074,55 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="md:mt-[118px] mt-14 hidden sm:flex items-center justify-center gap-3 pagination text-sm">
+          <a class="w-10 h-10 rounded-[4px] flex-center border border-[#55615780]">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.93974 13.78C5.81307 13.78 5.68641 13.7333 5.58641 13.6333C5.39307 13.44 5.39307 13.12 5.58641 12.9267L9.93307 8.58001C10.2531 8.26001 10.2531 7.74001 9.93307 7.42001L5.58641 3.07335C5.39307 2.88001 5.39307 2.56001 5.58641 2.36668C5.77974 2.17335 6.09974 2.17335 6.29307 2.36668L10.6397 6.71335C10.9797 7.05335 11.1731 7.51335 11.1731 8.00001C11.1731 8.48668 10.9864 8.94668 10.6397 9.28668L6.29307 13.6333C6.19307 13.7267 6.06641 13.78 5.93974 13.78Z"
+                fill="#556157" />
+              <script xmlns="" />
+            </svg>
+          </a>
+          <a class="active w-10 h-10 text-[#55615780] rounded-[4px] flex-center border border-[#55615780]">
+            1
+          </a>
+          <a class="w-10 h-10 text-[#55615780] rounded-[4px] flex-center border border-[#55615780]">
+            2
+          </a>
+          <a class="w-10 h-10 text-[#55615780] rounded-[4px] flex-center border border-[#55615780]">
+            3
+          </a>
+          <a class="w-10 h-10 text-[#55615780] rounded-[4px] flex-center border border-[#55615780]">
+            ...
+          </a>
+          <a class="w-10 h-10 text-[#55615780] rounded-[4px] flex-center border border-[#55615780]">
+            9
+          </a>
+          <a class="w-10 h-10 text-[#55615780] rounded-[4px] flex-center border border-[#55615780]">
+            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_599_3698)">
+                <path
+                  d="M15.7051 19.2823L11.6777 13.6124C11.3805 13.194 11.3805 12.5158 11.6777 12.0974L15.7051 6.42749"
+                  stroke="#556157" stroke-opacity="0.5" stroke-width="1.53428" stroke-linecap="round" />
+              </g>
+              <g clip-path="url(#clip1_599_3698)">
+                <path d="M10.4941 19.2823L6.5266 13.6124C6.23387 13.194 6.23387 12.5158 6.5266 12.0974L10.4941 6.42749"
+                  stroke="#556157" stroke-width="1.53429" stroke-linecap="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_599_3698">
+                  <rect width="25.7096" height="18.2618" fill="white"
+                    transform="translate(23.3145 1.68274e-06) rotate(90)" />
+                </clipPath>
+                <clipPath id="clip1_599_3698">
+                  <rect width="25.7097" height="17.9902" fill="white"
+                    transform="translate(17.9902 1.68274e-06) rotate(90)" />
+                </clipPath>
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -1028,7 +1308,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/script.js"></script>
-  <script src="../js/timer.js"></script>
+  <script src="../js/filter.js"></script>
 </body>
 
 </html>

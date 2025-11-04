@@ -204,25 +204,39 @@ a {
   background-color: #2422200A;
 }
 
-.accordionBtn img:last-child {
+.accordionBtn img:last-child,.accordionBtn2 svg {
   transition: all .4s;
 }
-
 .accordionBtn.active img:last-child {
   transform: rotate(0deg);
 }
-
-.accordionContent {
+.accordionBtn2.active svg {
+  transform: rotate(180deg);
+}
+.accordionContent,.accordionContent2 {
   max-height: 0;
   transition: all .4s;
   overflow: hidden;
 }
 
-.accordionContent.active {
+.accordionContent.active,.accordionContent2.active {
   max-height: 2000px;
   padding-bottom: 20px;
 }
-
+/* pagination */
+.pagination a:hover,.pagination a.active{
+  background-color: #A6B4A9;
+  color: white;
+}
+.pagination a:first-child svg path,.pagination a:last-child svg path{
+  transition: all .4s;
+}
+.pagination a:first-child:hover svg path,.pagination a:first-child.active svg path{
+  fill: white;
+}
+.pagination a:last-child:hover svg path,.pagination a:last-child.active svg path{
+  stroke: white;
+}
 .bg-gradient-1 {
   /* background: linear-gradient(180deg, rgba(110, 169, 118, 0) 0%, rgba(109, 169, 117, 0.3886) 47.4%, rgba(255, 255, 255, 0.58) 100%); */
   background: linear-gradient(180deg, rgba(35, 51, 38, 0) 0%, #233326 100%);
@@ -284,7 +298,9 @@ input[type="number"]::-webkit-outer-spin-button {
   background: linear-gradient(180deg, rgba(166, 180, 169, 0.85) 0%, rgba(34, 52, 38, 0.85) 100%);
   backdrop-filter: blur(7.599999904632568px);
 }
-
+header .absolute.top-4.z-10.duration-500.transition-all.opacity-0{
+  z-index: 40;
+}
 /* mobile menu */
 
 #hamIcon.active svg:last-child {
@@ -352,4 +368,12 @@ header ul li a.active {
   }
 }
 
-@media (max-width: 640px) {}
+@media (max-width: 1024px) {
+  #filterSidebar{
+    right: -400px;
+    transition: all .4s;
+  }
+    #filterSidebar.active{
+    right: 0;
+  }
+}
