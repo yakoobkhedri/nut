@@ -101,6 +101,25 @@ var blog = new Swiper(".blog", {
     prevEl: '.swiper-button-prev4', // دکمه قبلی
   },
 });
+var similar = new Swiper(".similar", {
+  slidesPerView: 1.5,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // توقف نشود!
+  },
+  spaceBetween: 14,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 21,
+    }
+  },
+});
 // persian number
 
 function convertPageNumbersToPersian() {
