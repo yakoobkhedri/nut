@@ -276,7 +276,12 @@ a {
 .banner .swiper-slide-active img.data_imagesContBottomTop {
   transform: translate(0, 0);
 }
-
+.mySwiper .swiper-slide-visible{
+    opacity: 30%;
+}
+.mySwiper .swiper-slide-visible.swiper-slide-thumb-active{
+    opacity: 100%;
+}
 /* number input */
 input[type="number"] {
   -moz-appearance: textfield;

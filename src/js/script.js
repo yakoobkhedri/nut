@@ -110,14 +110,32 @@ var similar = new Swiper(".similar", {
   },
   spaceBetween: 14,
   breakpoints: {
-    768: {
+      768: {
       slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    992: {
+      slidesPerView: 3,
       spaceBetween: 15,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 21,
     }
+  },
+});
+var mySwiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var mySwiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: mySwiper,
   },
 });
 // persian number
