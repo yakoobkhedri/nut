@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="../../dist/output.css" rel="stylesheet">
+  <title>تماس با ما</title>
+</head>
+
+<body class="w-full max-w-[1536px] mx-auto">
+
+  <div id="overlay" class="lg:hidden"></div>
+
+  <header class="relative">
+    <div class="max-w-content mx-auto px-4">
+      <div
+        class="sm:rounded-b-[30px] rounded-b-[20px] bg-[#A6B4A9] py-3 sm:py-[30px] px-4 xl:px-12 flex items-center justify-between gap-4">
+        <img id="hamIcon" alt="img" src="../img/icons/Frame 1890167188.svg"
+          class="cursor-pointer lg:hidden flex-shrink-0">
+        <a class="sm:ml-auto lg:ml-0"><img alt="img" src="../img/image 1.png" class="w-11 h-11"></a>
+        <ul class="lg:flex hidden items-center gap-4 lg:gap-11 text-xs xl:mr-12">
+          <li>
+            <a class="flex items-center gap-0.5 hover:text-[#bc6c25] group">
+              <p>دسته بندی</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition-all group-hover:stroke-[#bc6c25]"
+                  d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="#223426"
+                  stroke-width="2" stroke-linecap="round" />
+                <script xmlns="" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>محصولات </p>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>بلاگ </p>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>درباره ما </p>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>تماس با ما </p>
+            </a>
+          </li>
+        </ul>
+        <form
+          class="max-w-[271px] h-11 mr-auto rounded-[100px] bg-gradient-2 hidden sm:flex items-center gap-2 shadow-1 px-4">
+          <input placeholder="جستجو محصول ..." class="flex-grow bg-transparent outline-none border-none">
+          <img alt="icon" src="../img/icons/search-normal.svg" class="flex-shrink-0">
+        </form>
+        <form class="block sm:hidden">
+          <img alt="icon" src="../img/icons/search-normal.svg" class="flex-shrink-0 cursor-pointer">
+        </form>
+        <a
+          class="w-[124px] h-11 text-xs rounded-[20px] text-white bg-gradient-3 hover:text-[#bc6c25] hidden md:flex items-center justify-center">
+          ورود / ثبت نام
+        </a>
+      </div>
+      <div
+        class="text-xs py-7 px-4 xl:px-14 xl:text-sm hidden lg:flex items-center justify-center gap-4 xl:gap-6 mx-14 xl:mx-[92px] rounded-b-[40px] bg-[#223426]">
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>آجیل مخلوط</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>بسته بندی ویژه</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>محصولات ارگانیک</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>دانه های روغنی و غلات</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>زعفران و ادویه</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>خرما و مشتقات</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="bg-white overflow-auto w-[258px] shadow-3 py-5 fixed lg:hidden mobileMenu bottom-0 top-0 z-[999]">
+      <svg id="closeMenu" class="cursor-pointer group mr-auto ml-5" width="38" height="38" viewBox="0 0 38 38"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="group-hover:stroke-red-700 transition-all" d="M12.7198 12.7198L25.08 25.08" stroke="#233326"
+          stroke-width="1.9" stroke-linecap="round" />
+        <path class="group-hover:stroke-red-700 transition-all" d="M25.08 12.7198L12.7198 25.08" stroke="#233326"
+          stroke-width="1.9" stroke-linecap="round" />
+        <script xmlns="" />
+      </svg>
+      <div class="mt-3 flex items-center gap-3 mb-4 mx-11">
+        <img alt="img" src="../img/Pic.png" class="w-12 h-12 rounded-full">
+        <div class="font-bold">
+          <p class="text-[#24222066] text-[11px]">حساب کاربری</p>
+          <p class="text-sm text-primary mt-0.5">لورم ایپسوم متن</p>
+        </div>
+      </div>
+      <img alt="line" src="../img/Line 01.png" class="w-full">
+      <div class="mt-4 font-bold">
+        <li>
+          <div
+            class="accordionBtn transition-all rounded-xl py-4 px-[22px] flex items-center justify-between gap-2 text-sm text-primary mx-6 cursor-pointer">
+            <img alt="line" src="../img/icons/01.svg" class="flex-shrink-0">
+            <p>دسته بندی</p>
+            <img alt="line" src="../img/icons/Arrow.svg" class="flex-shrink-0 rotate-180">
+          </div>
+          <div class="accordionContent mx-14 text-xs">
+            <a
+              class="flex items-center gap-3 -mt-3 first:mt-0 text-[#2422208F] hover:text-[#bc6c25] rounded-bl-2xl py-3.5 border-l-2 border-[#24222029]">
+              لورم ایپسوم
+            </a>
+            <a
+              class="flex items-center gap-3 -mt-3 first:mt-0 text-[#2422208F] hover:text-[#bc6c25] rounded-bl-2xl py-3.5 border-l-2 border-[#24222029]">
+              لورم ایپسوم متن
+            </a>
+            <a
+              class="flex items-center gap-3 -mt-3 first:mt-0 text-[#2422208F] hover:text-[#bc6c25] rounded-bl-2xl py-3.5 border-l-2 border-[#24222029]">
+              لورم ایپسوم
+            </a>
+          </div>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+        <li>
+          <a class="flex items-center gap-6 text-sm text-[#2422208F] hover:text-[#bc6c25] mx-11 pt-3 pb-[15px]">
+            <img alt="icon" src="../img/icons/image 65 (2).svg" class="flex-shrink-0">
+            <p>تماس با ما</p>
+          </a>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+        <li>
+          <a class="flex items-center gap-6 text-sm text-[#2422208F] hover:text-[#bc6c25] mx-11 pt-3 pb-[15px]">
+            <img alt="icon" src="../img/icons/image 65 (3).svg" class="flex-shrink-0">
+            <p>درباره ما</p>
+          </a>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+        <li>
+          <a class="flex items-center gap-6 text-sm text-[#2422208F] hover:text-[#bc6c25] mx-11 pt-3 pb-[15px]">
+            <img alt="icon" src="../img/icons/image 65 (4).svg" class="flex-shrink-0">
+            <p>بلاگ</p>
+          </a>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="lg:mt-[130px] mt-16">
+      <div class="max-w-content mx-auto px-4">
+        <div class="flex items-center gap-3 text-sm flex-wrap">
+          <a class="hover:text-[#606C38]">صفحه اصلی</a>
+          <img alt="icon" src="../img/icons/arrow-left.svg" class="flex-shrink-0">
+          <p class="text-[#606C38]">تماس با ما</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-11">
+      <div class="max-w-content mx-auto px-4">
+        <div class="grid grid-cols-12 gap-5 xl:gap-[87px]">
+         <div class="col-span-12 lg:col-span-7">
+           <h3 class="font-bold text-xl sm:text-[38px] text-[#0B0C17]">با ما در تماس باشید...</h3>
+           <p class="text-justify text-sm sm:text-[15px] mt-4 text-[#3C3D45]">
+            در صورت نیاز به هرگونه راهنمایی، پیشنهاد یا انتقاد، از طریق اطلاعات تماس زیر با ما در ارتباط باشید. ما تلاش می‌کنیم که در کوتاه‌ترین زمان ممکن پاسخگوی پیام‌های شما باشیم. شما می‌توانید از طریق شماره تلفن، ایمیل یا فرم تماس با ما در ارتباط باشید.
+           </p>
+           <div class="mt-[73px] grid grid-cols-1 sm:grid-cols-2 gap-x-[60px] gap-y-12">
+            <div class="flex items-center gap-4">
+              <img alt="icon" src="../img/icons/image 63 (2).svg" class="flex-shrink-0">
+              <div>
+                <p class="font-bold text-xl">آدرس</p>
+                <p class="text-[15px] mt-1">تهران،‌ ولیعصر نرسیده به میدان ونک</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img alt="icon" src="../img/icons/image 65 (5).svg" class="flex-shrink-0">
+              <div>
+                <p class="font-bold text-xl">تلفن</p>
+                <p class="text-[15px] mt-1">۰۲۱ - ۱۲۳۴ ۵۶۷۹ | ۰۲۱ - ۱۲۳۴ ۵۶۷۸</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img alt="icon" src="../img/icons/image 75.svg" class="flex-shrink-0">
+              <div>
+                <p class="font-bold text-xl">ایمیل</p>
+                <p class="text-[15px] mt-1">Info@regal.com</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img alt="icon" src="../img/icons/image 64 (2).svg" class="flex-shrink-0">
+              <div>
+                <p class="font-bold text-xl">ساعت کاری</p>
+                <p class="text-[15px] mt-1">شنبه تا چهارشنبه 9 صبح الی 18</p>
+              </div>
+            </div>
+           </div>
+           <div class="mt-[82px]">
+             <h4 class="text-xl sm:text-[25px] font-bold">شبکه‌های اجتماعی</h4>
+             <div class="mt-5 flex items-center gap-7">
+                <a>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="21.5872" height="21.5872" fill="url(#pattern0_599_6298)"/>
+<path d="M19.3001 2.20844C19.1956 2.11819 19.0684 2.05816 18.9323 2.03483C18.7962 2.0115 18.6563 2.02576 18.5277 2.07605L1.43836 8.76387C1.19616 8.85805 0.991115 9.02836 0.854088 9.24915C0.71706 9.46995 0.655468 9.72928 0.678583 9.98811C0.701698 10.2469 0.808269 10.4913 0.982253 10.6843C1.15624 10.8773 1.38822 11.0086 1.64327 11.0584L6.07117 11.9277V16.865C6.0703 17.1339 6.15022 17.3969 6.30057 17.6199C6.45092 17.8428 6.66478 18.0155 6.91442 18.1155C7.16368 18.2173 7.4378 18.2417 7.70113 18.1856C7.96446 18.1295 8.20482 17.9955 8.39095 17.801L10.5261 15.5866L13.9134 18.5515C14.1578 18.7682 14.473 18.8882 14.7997 18.8888C14.9428 18.8887 15.0851 18.8662 15.2213 18.8222C15.4439 18.7515 15.644 18.6238 15.8019 18.4518C15.9598 18.2797 16.0698 18.0693 16.121 17.8415L19.5438 2.95135C19.5744 2.81706 19.5679 2.67697 19.525 2.5461C19.482 2.41522 19.4043 2.2985 19.3001 2.20844ZM14.1445 5.24414L6.58977 10.6544L2.40725 9.83396L14.1445 5.24414ZM7.42037 16.865V12.8612L9.51079 14.6945L7.42037 16.865ZM14.8013 17.5396L7.82935 11.426L17.864 4.23393L14.8013 17.5396Z" fill="#223426"/>
+<defs>
+<pattern id="pattern0_599_6298" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_599_6298" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_599_6298" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+<script xmlns=""/></svg>
+                </a>
+                <a>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="21.5872" height="21.5872" fill="url(#pattern0_599_6295)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7936 21.5872C16.7548 21.5872 21.5872 16.7548 21.5872 10.7936C21.5872 4.83246 16.7548 0 10.7936 0C4.83246 0 0 4.83246 0 10.7936C0 12.7294 0.509612 14.5462 1.40199 16.1172L0 21.5872L5.63955 20.2795C7.17112 21.1134 8.927 21.5872 10.7936 21.5872ZM10.7936 19.9267C15.8377 19.9267 19.9267 15.8377 19.9267 10.7936C19.9267 5.74956 15.8377 1.66056 10.7936 1.66056C5.74956 1.66056 1.66056 5.74956 1.66056 10.7936C1.66056 12.7412 2.27013 14.5463 3.30889 16.0287L2.49083 19.0963L5.61262 18.3159C7.08477 19.3318 8.86972 19.9267 10.7936 19.9267Z" fill="#223426"/>
+<defs>
+<pattern id="pattern0_599_6295" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_599_6295" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_599_6295" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+<script xmlns=""/></svg>
+                </a>
+                <a>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="21.5872" height="21.5872" fill="url(#pattern0_599_6289)"/>
+<path d="M13.4927 20.4628H8.09587C3.21176 20.4628 1.125 18.376 1.125 13.4919V8.09514C1.125 3.21103 3.21176 1.12427 8.09587 1.12427H13.4927C18.3768 1.12427 20.4635 3.21103 20.4635 8.09514V13.4919C20.4635 18.376 18.3768 20.4628 13.4927 20.4628ZM8.09587 2.47347C3.94933 2.47347 2.4742 3.94859 2.4742 8.09514V13.4919C2.4742 17.6385 3.94933 19.1136 8.09587 19.1136H13.4927C17.6392 19.1136 19.1143 17.6385 19.1143 13.4919V8.09514C19.1143 3.94859 17.6392 2.47347 13.4927 2.47347H8.09587Z" fill="#223426"/>
+<defs>
+<pattern id="pattern0_599_6289" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_599_6289" transform="scale(0.01)"/>
+</pattern>
+<image id="image0_599_6289" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+<script xmlns=""/></svg>
+                </a>
+             </div>
+           </div>
+         </div>
+         <div class="col-span-12 lg:col-span-5">
+           <form>
+            <div class="mb-5">
+              <label class="sm:text-lg"> ایمیل*</label>
+              <input placeholder="M.jalali@gamil.com" class="w-full mt-2 block outline-none border border-[#C2C5C6] rounded-[9px] h-[54px] px-[18px]">
+            </div>
+            <div class="mb-5">
+              <label class="sm:text-lg"> موضوع*</label>
+              <input placeholder="موضوع خود را انتخاب کنید" class="w-full mt-2 block outline-none border border-[#C2C5C6] rounded-[9px] h-[54px] px-[18px]">
+            </div>
+            <div class="mb-5">
+              <label class="sm:text-lg"> نام و نام خانوادگی*</label>
+              <input placeholder="مهرآلا جلالی" class="w-full mt-2 block outline-none border border-[#C2C5C6] rounded-[9px] h-[54px] px-[18px]">
+            </div>
+            <div class="mb-5">
+              <label class="sm:text-lg"> شماره تماس*</label>
+              <input placeholder="۰۹۱۲۳۴۵۶۷۸۹" class="w-full mt-2 block outline-none border border-[#C2C5C6] rounded-[9px] h-[54px] px-[18px]">
+            </div>
+            <div class="mb-10">
+              <label class="sm:text-lg"> متن پیام</label>
+              <textarea rows="4" placeholder="پیام خود را وارد کنید." class="w-full mt-2 block outline-none border border-[#C2C5C6] rounded-[9px] p-[18px]"></textarea>
+            </div>
+            <button class="text-white bg-[#5B242A] hover:bg-primary transition-all w-[180px] h-[45px] rounded-[9px] flex-center">ثبت و ارسال</button>
+           </form>
+         </div>
+        </div>
+        <div class="md:mt-[104px] mt-14">
+          <div class="overflow-hidden rounded-2xl">
+            <iframe class="rounded-2xl w-full h-[260px] sm:h-[444px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207344.0754342176!2d51.51246591933516!3d35.707740217686975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2z2KrZh9ix2KfZhtiMINin2LPYqtin2YYg2KrZh9ix2KfZhtiMINin24zYsdin2YY!5e0!3m2!1sfa!2s!4v1708858730182!5m2!1sfa!2s"
+              height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mt-[50px] flex items-start gap-2">
+             <img alt="icon" src="../img/icons/image 63 (2).svg" class="flex-shrink-0 w-7 h-7">
+             <div>
+              <p class="sm:text-2xl">آدرس شعبه حضوری</p>
+              <p class="mt-2 sm:text-xl">
+                تهران - شهرك غرب - بلوار دادمان - خيابان درختى - ٢٠٠ متر بالاتر از پارك سپهر - بين بوستان اول و دوم غربی - پلاك ١٣
+              </p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer
+    class="mt-9 md:mt-[122px] pt-16 md:pt-[109px] pb-[116px] min-[450px]:pb-[51px] md:pb-[155px] relative bg-[#091C2A]">
+    <svg class="absolute right-0 md:right-auto mx-auto md:mx-0 left-0 md:left-[98px] -top-[1px]"
+      xmlns="http://www.w3.org/2000/svg" width="115" height="29" viewBox="0 0 115 29" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.808594 0C12.6826 0 23.9746 5.14326 31.7683 14.1015C48.3963 33.2142 77.9745 33.5444 95.025 14.8076L104.338 4.57329C106.989 1.6604 110.745 0 114.683 0H0.808594Z"
+        fill="white"></path>
+    </svg>
+    <a href="#"
+      class="w-11 h-11 absolute right-0 md:right-auto mx-auto md:mx-0 left-0 -top-4 md:left-[141px] block rotate-90 hover:-translate-y-2">
+      <img alt="icon" src="../img/Group 1261152878.png">
+    </a>
+    <img alt="bg" src="../img/Asset 1mdpi copy 1 (2).png" class="absolute top-0 bottom-0 right-0 hidden sm:block">
+    <img alt="bg" src="../img/Frame 1890167202.png" class="absolute top-0 bottom-0 h-full right-0 sm:hidden">
+    <div class="max-w-content mx-auto px-4 relative">
+      <div
+        class="grid grid-cols-12 gap-y-7 lg:gap-5 bg-white py-10 pb-[60px] px-6 lg:px-[60px] rounded-[20px] md:rounded-[40px] border-[1.5px] border-[#CFD2E3]">
+        <div class="col-span-12 lg:col-span-4 lg:mt-9">
+          <a><img alt="img" src="../img/image 1.png" class="block mx-auto w-[59px] h-[59px]"></a>
+          <h4 class="text-xl font-bold sm:mt-8 mt-7">لورم ایپسوم متن</h4>
+          <p class="mt-4 text-justify leading-[120%] opacity-75 text-sm sm:text-[15px]">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع
+            با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+          </p>
+        </div>
+        <div class="col-span-12 lg:col-span-2 flex justify-center">
+          <div class="flex lg:flex-col gap-6 lg:justify-center justify-between w-full lg:w-auto text-sm sm:text-base">
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a class="hover:text-primary">خانه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">بلاگ</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">فروشگاه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">قوانین</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a class="hover:text-primary">خانه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">بلاگ</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">فروشگاه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">قوانین</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-6">
+          <div>
+            <div class="flex items-center gap-2">
+              <img alt="icon" src="../img/icons/image 63.svg" class="flex-shrink-0 w-5">
+              <p class="font-bold">آدرس:</p>
+            </div>
+            <p class="text-justify mt-2 sm:mr-11 text-[#444444] text-sm sm:text-base">
+              تهران - شهرك غرب - بلوار دادمان - خيابان درختى - ٢٠٠ متر بالاتر از پارك سپهر - بين بوستان اول و دوم غربی -
+              پلاك ١٣
+            </p>
+          </div>
+          <div class="mt-12">
+            <div class="flex items-center gap-2">
+              <img alt="icon" src="../img/icons/image 65.svg" class="flex-shrink-0 w-5">
+              <p class="font-bold">تلفن:</p>
+            </div>
+            <a class="text-justify mt-4 block mr-11 font-bold underline text-[#444444] text-sm sm:text-base">
+              09142730030
+            </a>
+          </div>
+          <div class="mt-8">
+            <div class="flex items-center gap-2">
+              <img alt="icon" src="../img/icons/image 64.svg" class="flex-shrink-0 w-5">
+              <p class="font-bold">ساعت کاری فروشگاه:</p>
+            </div>
+            <p class="text-justify mt-2 sm:mr-11 text-[#444444] text-sm sm:text-base">
+              ساعت کاری فروشگاه : همه روزه از ۹صبح تا 9 شب جمعه ها و روز های تعطیل از ساعت 10 صبح الی 9 شب
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu footer -->
+    <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
+      <!-- wave -->
+      <svg class="absolute -top-[53px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22"
+        viewBox="0 0 151 33" fill="none">
+        <filter id="shadow" filterUnits="userSpaceOnUse">
+          <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#23332666"></feDropShadow>
+        </filter>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z"
+          fill="#23332666" opacity="0.9"></path>
+      </svg>
+      <!--  -->
+      <div
+        class="h-14 overflow-visible absolute inset-x-0 bottom-0 mx-5 mb-5 block bg-[#23332666] bg-blur-2 rounded-[30px]">
+      </div>
+      <div class="-top-6 relative flex justify-between items-center px-9">
+        <div class="flex justify-between items-center font-bold w-full relative">
+          <a href="#"
+            class="flex justify-center items-center gap-1.5 flex-col p-2 text-center cursor-pointer relative z-10">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="29" height="29" fill="url(#pattern0_34_490)" />
+              <defs>
+                <pattern id="pattern0_34_490" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_34_490" transform="scale(0.01)" />
+                </pattern>
+                <image id="image0_34_490" width="100" height="100" preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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" />
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </a>
+        </div>
+        <div class="w-1/2 min-[450px]:w-full"></div>
+        <div class="flex items-center justify-end font-bold w-full relative">
+          <a href="#"
+            class="flex justify-center items-center gap-1.5 flex-col p-2 text-center cursor-pointer relative z-10">
+            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="32" height="29" fill="url(#pattern0_34_491)" />
+              <defs>
+                <pattern id="pattern0_34_491" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_34_491" transform="matrix(0.01 0 0 0.0110345 0 -0.0517241)" />
+                </pattern>
+                <image id="image0_34_491" width="100" height="100" preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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" />
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="absolute -top-[34px] inset-x-0">
+        <a class="flex justify-center items-center flex-col w-14 mx-auto gap-5" href="#">
+          <span
+            class="w-14 h-14 relative -top-[12px] rounded-full hover:bg-secondary transition-all bg-primary shadow-2 flex justify-center items-center">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="36" height="36" fill="url(#pattern0_34_1400)" />
+              <defs>
+                <pattern id="pattern0_34_1400" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_34_1400" transform="scale(0.01)" />
+                </pattern>
+                <image id="image0_34_1400" width="100" height="100" preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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" />
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#"
+    class="lg:w-20 w-14 lg:h-20 h-14 hover:bg-primary z-20 rounded-full fixed bottom-24 lg:bottom-[100px] right-6 md:right-20 xl:right-[120px] bg-[#5B242A] hidden md:flex justify-center items-center">
+    <img alt="img" src="../img/icons/Right 4.svg" class="w-7 lg:w-auto">
+  </a>
+
+  <a
+    class="w-14 h-14 bg-gradient-4 z-20 rounded-full fixed bottom-24 lg:bottom-[100px] right-6 md:right-20 xl:right-[120px] flex md:hidden justify-center items-center">
+    <img alt="img" src="../img/icons/image 71.svg" class="w-8">
+  </a>
+
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/css/app.css -o ./dist/output.css --watch -->
