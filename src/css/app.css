@@ -257,7 +257,6 @@ a {
 .bg-gradient-4 {
   background: linear-gradient(180deg, #658A6C 0%, #233326 100%);
 }
-
 .bg-blur-1 {
   backdrop-filter: blur(20.653593063354492px)
 }
