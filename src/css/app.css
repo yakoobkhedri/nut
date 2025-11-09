@@ -300,6 +300,19 @@ input[type="number"]::-webkit-outer-spin-button {
   /* حذف margin پیش‌فرض */
 }
 
+/* bank */
+
+.bank{
+  filter: grayscale(1);
+  transition: all .4s;
+  cursor: pointer;
+}
+.bank:hover,.bank.active{
+  filter: grayscale(0);
+  background-color: white;
+  border: 1px solid #223426;
+  box-shadow: 0px 0px 0px 3px #606C3866;
+}
 /* header */
 .dropdown {
   background: linear-gradient(180deg, rgba(166, 180, 169, 0.85) 0%, rgba(34, 52, 38, 0.85) 100%);
