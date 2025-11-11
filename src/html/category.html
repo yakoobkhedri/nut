@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="../../dist/output.css" rel="stylesheet">
+  <title>دسته بندی محصولات</title>
+</head>
+
+<body class="w-full max-w-[1536px] mx-auto">
+
+  <div id="overlay" class="lg:hidden"></div>
+
+  <header class="relative">
+    <div class="max-w-content mx-auto px-4">
+      <div
+        class="sm:rounded-b-[30px] rounded-b-[20px] bg-[#A6B4A9] py-3 sm:py-[30px] px-4 xl:px-12 flex items-center justify-between gap-4">
+        <img id="hamIcon" alt="img" src="../img/icons/Frame 1890167188.svg"
+          class="cursor-pointer lg:hidden flex-shrink-0">
+        <a class="sm:ml-auto lg:ml-0"><img alt="img" src="../img/image 1.png" class="w-11 h-11"></a>
+        <ul class="lg:flex hidden items-center gap-4 lg:gap-11 text-xs xl:mr-12">
+          <li>
+            <a class="flex items-center gap-0.5 hover:text-[#bc6c25] group">
+              <p>دسته بندی</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition-all group-hover:stroke-[#bc6c25]"
+                  d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="#223426"
+                  stroke-width="2" stroke-linecap="round" />
+                <script xmlns="" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>محصولات </p>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>بلاگ </p>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>درباره ما </p>
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#bc6c25]">
+              <p>تماس با ما </p>
+            </a>
+          </li>
+        </ul>
+        <form
+          class="max-w-[271px] h-11 mr-auto rounded-[100px] bg-gradient-2 hidden sm:flex items-center gap-2 shadow-1 px-4">
+          <input placeholder="جستجو محصول ..." class="flex-grow bg-transparent outline-none border-none">
+          <img alt="icon" src="../img/icons/search-normal.svg" class="flex-shrink-0">
+        </form>
+        <form class="block sm:hidden">
+          <img alt="icon" src="../img/icons/search-normal.svg" class="flex-shrink-0 cursor-pointer">
+        </form>
+        <a
+          class="w-[124px] h-11 text-xs rounded-[20px] text-white bg-gradient-3 hover:text-[#bc6c25] hidden md:flex items-center justify-center">
+          ورود / ثبت نام
+        </a>
+      </div>
+      <div
+        class="text-xs py-7 px-4 xl:px-14 xl:text-sm hidden lg:flex items-center justify-center gap-4 xl:gap-6 mx-14 xl:mx-[92px] rounded-b-[40px] bg-[#223426]">
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>آجیل مخلوط</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>بسته بندی ویژه</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>محصولات ارگانیک</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>دانه های روغنی و غلات</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>زعفران و ادویه</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex group cursor-pointer transition-all items-center gap-0.5 text-white hover:text-[#DDA15E] group !relative">
+          <p>خرما و مشتقات</p>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition-all group-hover:stroke-[#DDA15E]"
+              d="M18 10L12.7071 15.2929C12.3166 15.6834 11.6834 15.6834 11.2929 15.2929L6 10" stroke="white"
+              stroke-width="2" stroke-linecap="round" />
+            <script xmlns="" />
+          </svg>
+          <div
+            class="absolute top-4 z-10 group-hover:visible group-hover:opacity-100 duration-500 transition-all opacity-0 invisible">
+            <div
+              class="w-[160px] rounded-[20px] px-4 py-[30px] dropdown group-hover:mt-[39px] duration-500 transition-all">
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>ظروف پذیرایی</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                    fill="white" />
+                  <script xmlns="" />
+                </svg>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+              <a
+                class="flex items-center gap-1 text-white h-[26px] mb-5 last:mb-0 rounded-[4px] pr-2 border-transparent hover:border-primary border-r-4">
+                <p>لورم ایپسوم</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="bg-white overflow-auto w-[258px] shadow-3 py-5 fixed lg:hidden mobileMenu bottom-0 top-0 z-[999]">
+      <svg id="closeMenu" class="cursor-pointer group mr-auto ml-5" width="38" height="38" viewBox="0 0 38 38"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="group-hover:stroke-red-700 transition-all" d="M12.7198 12.7198L25.08 25.08" stroke="#233326"
+          stroke-width="1.9" stroke-linecap="round" />
+        <path class="group-hover:stroke-red-700 transition-all" d="M25.08 12.7198L12.7198 25.08" stroke="#233326"
+          stroke-width="1.9" stroke-linecap="round" />
+        <script xmlns="" />
+      </svg>
+      <div class="mt-3 flex items-center gap-3 mb-4 mx-11">
+        <img alt="img" src="../img/Pic.png" class="w-12 h-12 rounded-full">
+        <div class="font-bold">
+          <p class="text-[#24222066] text-[11px]">حساب کاربری</p>
+          <p class="text-sm text-primary mt-0.5">لورم ایپسوم متن</p>
+        </div>
+      </div>
+      <img alt="line" src="../img/Line 01.png" class="w-full">
+      <div class="mt-4 font-bold">
+        <li>
+          <div
+            class="accordionBtn transition-all rounded-xl py-4 px-[22px] flex items-center justify-between gap-2 text-sm text-primary mx-6 cursor-pointer">
+            <img alt="line" src="../img/icons/01.svg" class="flex-shrink-0">
+            <p>دسته بندی</p>
+            <img alt="line" src="../img/icons/Arrow.svg" class="flex-shrink-0 rotate-180">
+          </div>
+          <div class="accordionContent mx-14 text-xs">
+            <a
+              class="flex items-center gap-3 -mt-3 first:mt-0 text-[#2422208F] hover:text-[#bc6c25] rounded-bl-2xl py-3.5 border-l-2 border-[#24222029]">
+              لورم ایپسوم
+            </a>
+            <a
+              class="flex items-center gap-3 -mt-3 first:mt-0 text-[#2422208F] hover:text-[#bc6c25] rounded-bl-2xl py-3.5 border-l-2 border-[#24222029]">
+              لورم ایپسوم متن
+            </a>
+            <a
+              class="flex items-center gap-3 -mt-3 first:mt-0 text-[#2422208F] hover:text-[#bc6c25] rounded-bl-2xl py-3.5 border-l-2 border-[#24222029]">
+              لورم ایپسوم
+            </a>
+          </div>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+        <li>
+          <a class="flex items-center gap-6 text-sm text-[#2422208F] hover:text-[#bc6c25] mx-11 pt-3 pb-[15px]">
+            <img alt="icon" src="../img/icons/image 65 (2).svg" class="flex-shrink-0">
+            <p>تماس با ما</p>
+          </a>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+        <li>
+          <a class="flex items-center gap-6 text-sm text-[#2422208F] hover:text-[#bc6c25] mx-11 pt-3 pb-[15px]">
+            <img alt="icon" src="../img/icons/image 65 (3).svg" class="flex-shrink-0">
+            <p>درباره ما</p>
+          </a>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+        <li>
+          <a class="flex items-center gap-6 text-sm text-[#2422208F] hover:text-[#bc6c25] mx-11 pt-3 pb-[15px]">
+            <img alt="icon" src="../img/icons/image 65 (4).svg" class="flex-shrink-0">
+            <p>بلاگ</p>
+          </a>
+          <img alt="line" src="../img/Line 02.png" class="w-full">
+        </li>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="lg:mt-[130px] mt-16">
+      <div class="max-w-content mx-auto px-4">
+        <div class="flex items-center gap-3 text-sm flex-wrap">
+          <a class="hover:text-[#606C38]">صفحه اصلی</a>
+          <img alt="icon" src="../img/icons/arrow-left.svg" class="flex-shrink-0">
+          <p class="text-[#606C38]">لورم ایپسوم</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="md:mt-[66px] mt-6">
+      <div class="max-w-content mx-auto px-4">
+        <div>
+          <div class="bg-[#223426] rounded-2xl px-4 py-2 flex items-center justify-between gap-2">
+            <p class="text-[#E8D0A7]">آجیل</p>
+            <img alt="icon" src="../img/icons/image 5 (3).svg" class="flex-shrink-0">
+          </div>
+          <div class="swiper similar pt-12 pb-3 px-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover hover:bg-[#223426] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover hover:bg-[#223426] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover hover:bg-[#223426] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover hover:bg-[#223426] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover hover:bg-[#223426] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-1 mt-9 md:hidden">
+            <svg class="swiper-button-next static group" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="transition-all group-hover:fill-primary" y="1.66666" width="12.0833" height="11.6667"
+                rx="5.83333" fill="#E1EDE4" />
+              <path
+                d="M7.375 7.03126C7.11612 7.03126 6.90625 7.24113 6.90625 7.50001C6.90625 7.75889 7.11612 7.96876 7.375 7.96876L7.375 7.50001L7.375 7.03126ZM11.25 7.96876C11.5089 7.96876 11.7188 7.75889 11.7188 7.50001C11.7188 7.24113 11.5089 7.03126 11.25 7.03126V7.50001V7.96876ZM11.25 5.70961H10.7813H11.25ZM13.2625 4.7191L13.5484 4.34766V4.34766L13.2625 4.7191ZM13.2625 10.2809L13.5484 10.6524L13.2625 10.2809ZM11.25 9.29041H11.7188H11.25ZM15.5883 8.49052L15.3024 8.11908V8.11908L15.5883 8.49052ZM15.5883 6.5095L15.3024 6.88094V6.88094L15.5883 6.5095ZM7.375 7.50001L7.375 7.96876L11.25 7.96876V7.50001V7.03126L7.375 7.03126L7.375 7.50001ZM15.5883 8.49052L15.3024 8.11908L12.9766 9.90948L13.2625 10.2809L13.5484 10.6524L15.8742 8.86196L15.5883 8.49052ZM11.25 9.29041H11.7188V5.70961H11.25H10.7813V9.29041H11.25ZM13.2625 4.7191L12.9766 5.09054L15.3024 6.88094L15.5883 6.5095L15.8742 6.13806L13.5484 4.34766L13.2625 4.7191ZM11.25 5.70961L11.7188 5.70961C11.7188 5.0613 12.4628 4.69507 12.9766 5.09054L13.2625 4.7191L13.5484 4.34766C12.4182 3.47764 10.7813 4.28332 10.7813 5.70961H11.25ZM13.2625 10.2809L12.9766 9.90948C12.4628 10.3049 11.7188 9.93872 11.7188 9.29041H11.25H10.7813C10.7813 10.7167 12.4182 11.5224 13.5484 10.6524L13.2625 10.2809ZM15.5883 8.49052L15.8742 8.86196C16.768 8.17394 16.768 6.82608 15.8742 6.13806L15.5883 6.5095L15.3024 6.88094C15.7086 7.19368 15.7086 7.80634 15.3024 8.11908L15.5883 8.49052Z"
+                fill="#7B7B7B" />
+              <path d="M5.875 7.5H5.125" stroke="#7B7B7B" stroke-width="0.9375" stroke-linecap="round" />
+              <script xmlns="" />
+            </svg>
+            <svg class="swiper-button-prev static group" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="transition-all group-hover:fill-primary" width="12.0833" height="11.6667" rx="5.83333"
+                transform="matrix(-1 0 0 1 17.5 1.66666)" fill="#E1EDE4" />
+              <path
+                d="M10.125 7.03126C10.3839 7.03126 10.5938 7.24113 10.5938 7.50001C10.5937 7.75889 10.3839 7.96876 10.125 7.96876L10.125 7.50001L10.125 7.03126ZM6.25 7.96876C5.99112 7.96876 5.78125 7.75889 5.78125 7.50001C5.78125 7.24113 5.99112 7.03126 6.25 7.03126V7.50001V7.96876ZM6.25 5.70961H6.71875H6.25ZM4.23751 4.7191L3.95157 4.34766V4.34766L4.23751 4.7191ZM4.23751 10.2809L3.95157 10.6524L4.23751 10.2809ZM6.25 9.29041H5.78125H6.25ZM1.91171 8.49052L2.19764 8.11908V8.11908L1.91171 8.49052ZM1.91171 6.5095L2.19764 6.88094V6.88094L1.91171 6.5095ZM10.125 7.50001L10.125 7.96876L6.25 7.96876V7.50001V7.03126L10.125 7.03126L10.125 7.50001ZM1.91171 8.49052L2.19764 8.11908L4.52344 9.90948L4.23751 10.2809L3.95157 10.6524L1.62577 8.86196L1.91171 8.49052ZM6.25 9.29041H5.78125V5.70961H6.25H6.71875V9.29041H6.25ZM4.23751 4.7191L4.52344 5.09054L2.19764 6.88094L1.91171 6.5095L1.62577 6.13806L3.95157 4.34766L4.23751 4.7191ZM6.25 5.70961L5.78125 5.70961C5.78125 5.0613 5.03717 4.69507 4.52344 5.09054L4.23751 4.7191L3.95157 4.34766C5.08177 3.47764 6.71875 4.28332 6.71875 5.70961H6.25ZM4.23751 10.2809L4.52344 9.90948C5.03717 10.3049 5.78125 9.93872 5.78125 9.29041H6.25H6.71875C6.71875 10.7167 5.08177 11.5224 3.95157 10.6524L4.23751 10.2809ZM1.91171 8.49052L1.62577 8.86196C0.732009 8.17394 0.732009 6.82608 1.62577 6.13806L1.91171 6.5095L2.19764 6.88094C1.79139 7.19368 1.79139 7.80634 2.19764 8.11908L1.91171 8.49052Z"
+                fill="#7B7B7B" />
+              <path d="M11.625 7.5H12.375" stroke="#7B7B7B" stroke-width="0.9375" stroke-linecap="round" />
+              <script xmlns="" />
+            </svg>
+          </div>
+        </div>
+        <div class="md:mt-[83px] mt-9">
+          <div class="bg-[#3A2E29] rounded-2xl px-4 py-2 flex items-center justify-between gap-2">
+            <p class="text-[#BE9C83]">قهوه</p>
+            <img alt="icon" src="../img/icons/image 5 (2).svg" class="flex-shrink-0">
+          </div>
+          <div class="swiper similar pt-12 pb-3 px-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover1 hover:bg-[#3A2E29] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover1 hover:bg-[#3A2E29] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover1 hover:bg-[#3A2E29] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover1 hover:bg-[#3A2E29] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover1 hover:bg-[#3A2E29] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-1 mt-9 md:hidden">
+            <svg class="swiper-button-next static group" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="transition-all group-hover:fill-primary" y="1.66666" width="12.0833" height="11.6667"
+                rx="5.83333" fill="#BE9C838A" />
+              <path
+                d="M7.375 7.03126C7.11612 7.03126 6.90625 7.24113 6.90625 7.50001C6.90625 7.75889 7.11612 7.96876 7.375 7.96876L7.375 7.50001L7.375 7.03126ZM11.25 7.96876C11.5089 7.96876 11.7188 7.75889 11.7188 7.50001C11.7188 7.24113 11.5089 7.03126 11.25 7.03126V7.50001V7.96876ZM11.25 5.70961H10.7813H11.25ZM13.2625 4.7191L13.5484 4.34766V4.34766L13.2625 4.7191ZM13.2625 10.2809L13.5484 10.6524L13.2625 10.2809ZM11.25 9.29041H11.7188H11.25ZM15.5883 8.49052L15.3024 8.11908V8.11908L15.5883 8.49052ZM15.5883 6.5095L15.3024 6.88094V6.88094L15.5883 6.5095ZM7.375 7.50001L7.375 7.96876L11.25 7.96876V7.50001V7.03126L7.375 7.03126L7.375 7.50001ZM15.5883 8.49052L15.3024 8.11908L12.9766 9.90948L13.2625 10.2809L13.5484 10.6524L15.8742 8.86196L15.5883 8.49052ZM11.25 9.29041H11.7188V5.70961H11.25H10.7813V9.29041H11.25ZM13.2625 4.7191L12.9766 5.09054L15.3024 6.88094L15.5883 6.5095L15.8742 6.13806L13.5484 4.34766L13.2625 4.7191ZM11.25 5.70961L11.7188 5.70961C11.7188 5.0613 12.4628 4.69507 12.9766 5.09054L13.2625 4.7191L13.5484 4.34766C12.4182 3.47764 10.7813 4.28332 10.7813 5.70961H11.25ZM13.2625 10.2809L12.9766 9.90948C12.4628 10.3049 11.7188 9.93872 11.7188 9.29041H11.25H10.7813C10.7813 10.7167 12.4182 11.5224 13.5484 10.6524L13.2625 10.2809ZM15.5883 8.49052L15.8742 8.86196C16.768 8.17394 16.768 6.82608 15.8742 6.13806L15.5883 6.5095L15.3024 6.88094C15.7086 7.19368 15.7086 7.80634 15.3024 8.11908L15.5883 8.49052Z"
+                fill="#7B7B7B" />
+              <path d="M5.875 7.5H5.125" stroke="#7B7B7B" stroke-width="0.9375" stroke-linecap="round" />
+              <script xmlns="" />
+            </svg>
+            <svg class="swiper-button-prev static group" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="transition-all group-hover:fill-primary" width="12.0833" height="11.6667" rx="5.83333"
+                transform="matrix(-1 0 0 1 17.5 1.66666)" fill="#BE9C838A" />
+              <path
+                d="M10.125 7.03126C10.3839 7.03126 10.5938 7.24113 10.5938 7.50001C10.5937 7.75889 10.3839 7.96876 10.125 7.96876L10.125 7.50001L10.125 7.03126ZM6.25 7.96876C5.99112 7.96876 5.78125 7.75889 5.78125 7.50001C5.78125 7.24113 5.99112 7.03126 6.25 7.03126V7.50001V7.96876ZM6.25 5.70961H6.71875H6.25ZM4.23751 4.7191L3.95157 4.34766V4.34766L4.23751 4.7191ZM4.23751 10.2809L3.95157 10.6524L4.23751 10.2809ZM6.25 9.29041H5.78125H6.25ZM1.91171 8.49052L2.19764 8.11908V8.11908L1.91171 8.49052ZM1.91171 6.5095L2.19764 6.88094V6.88094L1.91171 6.5095ZM10.125 7.50001L10.125 7.96876L6.25 7.96876V7.50001V7.03126L10.125 7.03126L10.125 7.50001ZM1.91171 8.49052L2.19764 8.11908L4.52344 9.90948L4.23751 10.2809L3.95157 10.6524L1.62577 8.86196L1.91171 8.49052ZM6.25 9.29041H5.78125V5.70961H6.25H6.71875V9.29041H6.25ZM4.23751 4.7191L4.52344 5.09054L2.19764 6.88094L1.91171 6.5095L1.62577 6.13806L3.95157 4.34766L4.23751 4.7191ZM6.25 5.70961L5.78125 5.70961C5.78125 5.0613 5.03717 4.69507 4.52344 5.09054L4.23751 4.7191L3.95157 4.34766C5.08177 3.47764 6.71875 4.28332 6.71875 5.70961H6.25ZM4.23751 10.2809L4.52344 9.90948C5.03717 10.3049 5.78125 9.93872 5.78125 9.29041H6.25H6.71875C6.71875 10.7167 5.08177 11.5224 3.95157 10.6524L4.23751 10.2809ZM1.91171 8.49052L1.62577 8.86196C0.732009 8.17394 0.732009 6.82608 1.62577 6.13806L1.91171 6.5095L2.19764 6.88094C1.79139 7.19368 1.79139 7.80634 2.19764 8.11908L1.91171 8.49052Z"
+                fill="#7B7B7B" />
+              <path d="M11.625 7.5H12.375" stroke="#7B7B7B" stroke-width="0.9375" stroke-linecap="round" />
+              <script xmlns="" />
+            </svg>
+          </div>
+        </div>
+        <div class="md:mt-[83px] mt-9">
+          <div class="bg-[#BE9C83] rounded-2xl px-4 py-2 flex items-center justify-between gap-2">
+            <p class="text-[#3A2E29]">لورم ایپسوم</p>
+            <img alt="icon" src="../img/icons/image 4.svg" class="flex-shrink-0">
+          </div>
+          <div class="swiper similar pt-12 pb-3 px-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover2 hover:bg-[#BE9C83] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover2 hover:bg-[#BE9C83] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover2 hover:bg-[#BE9C83] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover2 hover:bg-[#BE9C83] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a>
+                  <div
+                    class="rounded-3xl sm:rounded-[31px] bg-[#F7F7F7] gradientHover2 hover:bg-[#BE9C83] group p-4 sm:p-6 transition-all">
+                    <div class="rounded-[30px] p-8 bg-gradient-5 transition-all">
+                      <img alt="img" src="../img/066c363d-b159-4d4a-8af1-c2001d73ddd3 copy 1.png"
+                        class="sm:w-[160px] w-[120px] sm:h-[160px] h-[120px] mx-auto rounded-full">
+                    </div>
+                    <div class="mt-2.5">
+                      <div class="flex items-center justify-between gap-2">
+                        <p
+                          class="text-[#223426] transition-all group-hover:text-white line-clamp-1 text-sm sm:text-base">
+                          لورم ایپسوم متن</p>
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition-all group-hover:fill-white"
+                            d="M0.28347 7.81224C-0.0945339 7.43423 -0.0945339 6.82137 0.28347 6.44337L6.4434 0.283443C6.8214 -0.0945608 7.43426 -0.0945604 7.81227 0.283443C8.19027 0.661448 8.19027 1.27431 7.81227 1.65232L2.33678 7.1278L7.81227 12.6033C8.19027 12.9813 8.19027 13.5942 7.81227 13.9722C7.43426 14.3502 6.8214 14.3502 6.4434 13.9722L0.28347 7.81224ZM11.6152 7.12781L11.6152 8.09575L0.967906 8.09574L0.967906 7.1278L0.967906 6.15986L11.6152 6.15987L11.6152 7.12781Z"
+                            fill="#223426" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <p class="text-[#0A0A0A] mt-2 transition-all group-hover:text-white text-sm sm:text-base">لورم
+                        ایپسوم متن ساختگی</p>
+                      <div
+                        class="sm:w-[132px] w-[98px] sm:h-10 h-7 text-[10px] mt-2.5 mr-auto flex-center sm:text-xs rounded-[5px] group-hover:border-white border border-[#0A0A0A] transition-all group-hover:text-white text-[#0A0A0A]">
+                        مشاهده همه</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-1 mt-9 md:hidden">
+            <svg class="swiper-button-next static group" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="transition-all group-hover:fill-primary" y="1.66666" width="12.0833" height="11.6667"
+                rx="5.83333" fill="#BE9C8394" />
+              <path
+                d="M7.375 7.03126C7.11612 7.03126 6.90625 7.24113 6.90625 7.50001C6.90625 7.75889 7.11612 7.96876 7.375 7.96876L7.375 7.50001L7.375 7.03126ZM11.25 7.96876C11.5089 7.96876 11.7188 7.75889 11.7188 7.50001C11.7188 7.24113 11.5089 7.03126 11.25 7.03126V7.50001V7.96876ZM11.25 5.70961H10.7813H11.25ZM13.2625 4.7191L13.5484 4.34766V4.34766L13.2625 4.7191ZM13.2625 10.2809L13.5484 10.6524L13.2625 10.2809ZM11.25 9.29041H11.7188H11.25ZM15.5883 8.49052L15.3024 8.11908V8.11908L15.5883 8.49052ZM15.5883 6.5095L15.3024 6.88094V6.88094L15.5883 6.5095ZM7.375 7.50001L7.375 7.96876L11.25 7.96876V7.50001V7.03126L7.375 7.03126L7.375 7.50001ZM15.5883 8.49052L15.3024 8.11908L12.9766 9.90948L13.2625 10.2809L13.5484 10.6524L15.8742 8.86196L15.5883 8.49052ZM11.25 9.29041H11.7188V5.70961H11.25H10.7813V9.29041H11.25ZM13.2625 4.7191L12.9766 5.09054L15.3024 6.88094L15.5883 6.5095L15.8742 6.13806L13.5484 4.34766L13.2625 4.7191ZM11.25 5.70961L11.7188 5.70961C11.7188 5.0613 12.4628 4.69507 12.9766 5.09054L13.2625 4.7191L13.5484 4.34766C12.4182 3.47764 10.7813 4.28332 10.7813 5.70961H11.25ZM13.2625 10.2809L12.9766 9.90948C12.4628 10.3049 11.7188 9.93872 11.7188 9.29041H11.25H10.7813C10.7813 10.7167 12.4182 11.5224 13.5484 10.6524L13.2625 10.2809ZM15.5883 8.49052L15.8742 8.86196C16.768 8.17394 16.768 6.82608 15.8742 6.13806L15.5883 6.5095L15.3024 6.88094C15.7086 7.19368 15.7086 7.80634 15.3024 8.11908L15.5883 8.49052Z"
+                fill="#7B7B7B" />
+              <path d="M5.875 7.5H5.125" stroke="#7B7B7B" stroke-width="0.9375" stroke-linecap="round" />
+              <script xmlns="" />
+            </svg>
+            <svg class="swiper-button-prev static group" width="18" height="15" viewBox="0 0 18 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="transition-all group-hover:fill-primary" width="12.0833" height="11.6667" rx="5.83333"
+                transform="matrix(-1 0 0 1 17.5 1.66666)" fill="#BE9C8394" />
+              <path
+                d="M10.125 7.03126C10.3839 7.03126 10.5938 7.24113 10.5938 7.50001C10.5937 7.75889 10.3839 7.96876 10.125 7.96876L10.125 7.50001L10.125 7.03126ZM6.25 7.96876C5.99112 7.96876 5.78125 7.75889 5.78125 7.50001C5.78125 7.24113 5.99112 7.03126 6.25 7.03126V7.50001V7.96876ZM6.25 5.70961H6.71875H6.25ZM4.23751 4.7191L3.95157 4.34766V4.34766L4.23751 4.7191ZM4.23751 10.2809L3.95157 10.6524L4.23751 10.2809ZM6.25 9.29041H5.78125H6.25ZM1.91171 8.49052L2.19764 8.11908V8.11908L1.91171 8.49052ZM1.91171 6.5095L2.19764 6.88094V6.88094L1.91171 6.5095ZM10.125 7.50001L10.125 7.96876L6.25 7.96876V7.50001V7.03126L10.125 7.03126L10.125 7.50001ZM1.91171 8.49052L2.19764 8.11908L4.52344 9.90948L4.23751 10.2809L3.95157 10.6524L1.62577 8.86196L1.91171 8.49052ZM6.25 9.29041H5.78125V5.70961H6.25H6.71875V9.29041H6.25ZM4.23751 4.7191L4.52344 5.09054L2.19764 6.88094L1.91171 6.5095L1.62577 6.13806L3.95157 4.34766L4.23751 4.7191ZM6.25 5.70961L5.78125 5.70961C5.78125 5.0613 5.03717 4.69507 4.52344 5.09054L4.23751 4.7191L3.95157 4.34766C5.08177 3.47764 6.71875 4.28332 6.71875 5.70961H6.25ZM4.23751 10.2809L4.52344 9.90948C5.03717 10.3049 5.78125 9.93872 5.78125 9.29041H6.25H6.71875C6.71875 10.7167 5.08177 11.5224 3.95157 10.6524L4.23751 10.2809ZM1.91171 8.49052L1.62577 8.86196C0.732009 8.17394 0.732009 6.82608 1.62577 6.13806L1.91171 6.5095L2.19764 6.88094C1.79139 7.19368 1.79139 7.80634 2.19764 8.11908L1.91171 8.49052Z"
+                fill="#7B7B7B" />
+              <path d="M11.625 7.5H12.375" stroke="#7B7B7B" stroke-width="0.9375" stroke-linecap="round" />
+              <script xmlns="" />
+            </svg>
+          </div>
+        </div>
+        <div class="md:mt-[83px] mt-9">
+          <div class="bg-[#E2D6C9] rounded-2xl px-4 py-2 flex items-center justify-between gap-2">
+            <p class="text-[#5B242A]">محتوا</p>
+            <img alt="icon" src="../img/icons/image 4.svg" class="flex-shrink-0">
+          </div>
+          <div class="mt-16">
+            <h2 class="sm:text-[36px] text-xl">لورم ایپسوم متن لورم ایپسوم</h2>
+            <p class="mt-8 text-justify leading-5 sm:leading-9 text-sm sm:text-base">
+              شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+            </p>
+            <h2 class="sm:text-[36px] text-xl mt-11">لورم ایپسوم متن لورم ایپسوم</h2>
+            <p class="mt-8 text-justify leading-5 sm:leading-9 text-sm sm:text-base">
+              شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+            </p>
+            <h2 class="sm:text-[36px] text-xl mt-11">لورم ایپسوم متن لورم ایپسوم</h2>
+            <p class="mt-8 text-justify leading-5 sm:leading-9 text-sm sm:text-base">
+              شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer
+    class="mt-9 md:mt-[122px] pt-16 md:pt-[109px] pb-[116px] min-[450px]:pb-[51px] md:pb-[155px] relative bg-[#091C2A]">
+    <svg class="absolute right-0 md:right-auto mx-auto md:mx-0 left-0 md:left-[98px] -top-[1px]"
+      xmlns="http://www.w3.org/2000/svg" width="115" height="29" viewBox="0 0 115 29" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.808594 0C12.6826 0 23.9746 5.14326 31.7683 14.1015C48.3963 33.2142 77.9745 33.5444 95.025 14.8076L104.338 4.57329C106.989 1.6604 110.745 0 114.683 0H0.808594Z"
+        fill="white"></path>
+    </svg>
+    <a href="#"
+      class="w-11 h-11 absolute right-0 md:right-auto mx-auto md:mx-0 left-0 -top-4 md:left-[141px] block rotate-90 hover:-translate-y-2">
+      <img alt="icon" src="../img/Group 1261152878.png">
+    </a>
+    <img alt="bg" src="../img/Asset 1mdpi copy 1 (2).png" class="absolute top-0 bottom-0 right-0 hidden sm:block">
+    <img alt="bg" src="../img/Frame 1890167202.png" class="absolute top-0 bottom-0 h-full right-0 sm:hidden">
+    <div class="max-w-content mx-auto px-4 relative">
+      <div
+        class="grid grid-cols-12 gap-y-7 lg:gap-5 bg-white py-10 pb-[60px] px-6 lg:px-[60px] rounded-[20px] md:rounded-[40px] border-[1.5px] border-[#CFD2E3]">
+        <div class="col-span-12 lg:col-span-4 lg:mt-9">
+          <a><img alt="img" src="../img/image 1.png" class="block mx-auto w-[59px] h-[59px]"></a>
+          <h4 class="text-xl font-bold sm:mt-8 mt-7">لورم ایپسوم متن</h4>
+          <p class="mt-4 text-justify leading-[120%] opacity-75 text-sm sm:text-[15px]">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع
+            با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+          </p>
+        </div>
+        <div class="col-span-12 lg:col-span-2 flex justify-center">
+          <div class="flex lg:flex-col gap-6 lg:justify-center justify-between w-full lg:w-auto text-sm sm:text-base">
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a class="hover:text-primary">خانه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">بلاگ</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">فروشگاه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">قوانین</a>
+              </li>
+            </ul>
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a class="hover:text-primary">خانه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">بلاگ</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">فروشگاه</a>
+              </li>
+              <li>
+                <a class="hover:text-primary">قوانین</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-6">
+          <div>
+            <div class="flex items-center gap-2">
+              <img alt="icon" src="../img/icons/image 63.svg" class="flex-shrink-0 w-5">
+              <p class="font-bold">آدرس:</p>
+            </div>
+            <p class="text-justify mt-2 sm:mr-11 text-[#444444] text-sm sm:text-base">
+              تهران - شهرك غرب - بلوار دادمان - خيابان درختى - ٢٠٠ متر بالاتر از پارك سپهر - بين بوستان اول و دوم غربی -
+              پلاك ١٣
+            </p>
+          </div>
+          <div class="mt-12">
+            <div class="flex items-center gap-2">
+              <img alt="icon" src="../img/icons/image 65.svg" class="flex-shrink-0 w-5">
+              <p class="font-bold">تلفن:</p>
+            </div>
+            <a class="text-justify mt-4 block mr-11 font-bold underline text-[#444444] text-sm sm:text-base">
+              09142730030
+            </a>
+          </div>
+          <div class="mt-8">
+            <div class="flex items-center gap-2">
+              <img alt="icon" src="../img/icons/image 64.svg" class="flex-shrink-0 w-5">
+              <p class="font-bold">ساعت کاری فروشگاه:</p>
+            </div>
+            <p class="text-justify mt-2 sm:mr-11 text-[#444444] text-sm sm:text-base">
+              ساعت کاری فروشگاه : همه روزه از ۹صبح تا 9 شب جمعه ها و روز های تعطیل از ساعت 10 صبح الی 9 شب
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu footer -->
+    <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
+      <!-- wave -->
+      <svg class="absolute -top-[53px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22"
+        viewBox="0 0 151 33" fill="none">
+        <filter id="shadow" filterUnits="userSpaceOnUse">
+          <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#23332666"></feDropShadow>
+        </filter>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z"
+          fill="#23332666" opacity="0.9"></path>
+      </svg>
+      <!--  -->
+      <div
+        class="h-14 overflow-visible absolute inset-x-0 bottom-0 mx-5 mb-5 block bg-[#23332666] bg-blur-2 rounded-[30px]">
+      </div>
+      <div class="-top-6 relative flex justify-between items-center px-9">
+        <div class="flex justify-between items-center font-bold w-full relative">
+          <a href="#"
+            class="flex justify-center items-center gap-1.5 flex-col p-2 text-center cursor-pointer relative z-10">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="29" height="29" fill="url(#pattern0_34_490)" />
+              <defs>
+                <pattern id="pattern0_34_490" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_34_490" transform="scale(0.01)" />
+                </pattern>
+                <image id="image0_34_490" width="100" height="100" preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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" />
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </a>
+        </div>
+        <div class="w-1/2 min-[450px]:w-full"></div>
+        <div class="flex items-center justify-end font-bold w-full relative">
+          <a href="#"
+            class="flex justify-center items-center gap-1.5 flex-col p-2 text-center cursor-pointer relative z-10">
+            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="32" height="29" fill="url(#pattern0_34_491)" />
+              <defs>
+                <pattern id="pattern0_34_491" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_34_491" transform="matrix(0.01 0 0 0.0110345 0 -0.0517241)" />
+                </pattern>
+                <image id="image0_34_491" width="100" height="100" preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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" />
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="absolute -top-[34px] inset-x-0">
+        <a class="flex justify-center items-center flex-col w-14 mx-auto gap-5" href="#">
+          <span
+            class="w-14 h-14 relative -top-[12px] rounded-full hover:bg-secondary transition-all bg-primary shadow-2 flex justify-center items-center">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="36" height="36" fill="url(#pattern0_34_1400)" />
+              <defs>
+                <pattern id="pattern0_34_1400" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_34_1400" transform="scale(0.01)" />
+                </pattern>
+                <image id="image0_34_1400" width="100" height="100" preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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" />
+              </defs>
+              <script xmlns="" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#"
+    class="lg:w-20 w-14 lg:h-20 h-14 hover:bg-primary z-20 rounded-full fixed bottom-24 lg:bottom-[100px] right-6 md:right-20 xl:right-[120px] bg-[#5B242A] hidden md:flex justify-center items-center">
+    <img alt="img" src="../img/icons/Right 4.svg" class="w-7 lg:w-auto">
+  </a>
+
+  <a
+    class="w-14 h-14 bg-gradient-4 z-20 rounded-full fixed bottom-24 lg:bottom-[100px] right-6 md:right-20 xl:right-[120px] flex md:hidden justify-center items-center">
+    <img alt="img" src="../img/icons/image 71.svg" class="w-8">
+  </a>
+
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/css/app.css -o ./dist/output.css --watch -->

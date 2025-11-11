@@ -123,6 +123,10 @@ var similar = new Swiper(".similar", {
       spaceBetween: 21,
     }
   },
+    navigation: {
+    nextEl: '.swiper-button-next', // دکمه بعدی
+    prevEl: '.swiper-button-prev', // دکمه قبلی
+  },
 });
 var mySwiper = new Swiper(".mySwiper", {
   loop: true,

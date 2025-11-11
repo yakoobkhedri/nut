@@ -257,6 +257,9 @@ a {
 .bg-gradient-4 {
   background: linear-gradient(180deg, #658A6C 0%, #233326 100%);
 }
+.bg-gradient-5{
+  background: linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%);
+}
 .bg-blur-1 {
   backdrop-filter: blur(20.653593063354492px)
 }
@@ -299,7 +302,13 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
   /* حذف margin پیش‌فرض */
 }
-
+/* profileList */
+.profileList li a:hover{
+  @apply text-[#223426] border-b-2 border-[#223426] bg-[#DEEDE1];
+}
+.profileList li a:hover svg path{
+  stroke: #223426;
+}
 /* bank */
 
 .bank{
@@ -360,7 +369,16 @@ header .absolute.top-4.z-10.duration-500.transition-all.opacity-0{
   display: none;
   /* برای Chrome, Safari و Opera */
 }
-
+/* hover */
+.gradientHover:hover > div:first-child{
+  background: linear-gradient(180deg, #FFFFFF 0%, #DEEDE1 100%);
+}
+.gradientHover1:hover > div:first-child{
+  background: linear-gradient(180deg, #FFFFFF 0%, #BE9C83 100%);
+}
+.gradientHover2:hover > div:first-child{
+ background: linear-gradient(180deg, #FFFFFF 0%, #E0C4B9 100%);
+}
 /* box shadow */
 
 .shadow-1 {
