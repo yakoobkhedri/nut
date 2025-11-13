@@ -243,7 +243,6 @@ a {
 .bg-gradient-1 {
   /* background: linear-gradient(180deg, rgba(110, 169, 118, 0) 0%, rgba(109, 169, 117, 0.3886) 47.4%, rgba(255, 255, 255, 0.58) 100%); */
   background: linear-gradient(180deg, rgba(35, 51, 38, 0) 0%, #233326 100%);
-
 }
 
 .bg-gradient-2 {
@@ -286,6 +285,21 @@ a {
 }
 .mySwiper .swiper-slide-visible.swiper-slide-thumb-active{
     opacity: 100%;
+}
+/* error */
+.error{
+  transition: all .4s;
+  border: 1px solid #DC2626 !important;
+  color: #DC2626 !important;
+}
+.error img{
+transition: all .4s;
+}
+.error img.first{
+  display: none !important;
+}
+.error img.last{
+  display: block !important;
 }
 /* number input */
 input[type="number"] {
