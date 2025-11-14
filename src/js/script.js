@@ -174,3 +174,7 @@ accordionBtn2.forEach((item)=>{
     item.nextElementSibling.classList.toggle('active');
   })
 });
+
+// datapicker
+
+jalaliDatepicker.startWatch();

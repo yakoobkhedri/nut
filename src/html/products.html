@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="../../dist/output.css" rel="stylesheet">
+  <link href="../css/rSlider.min.css" rel="stylesheet">
   <title>محصولات</title>
 </head>
 
@@ -464,19 +465,33 @@
             <p class="text-[#606C38]">۵۶ کالا</p>
           </div>
           <div class="flex items-center gap-2">
-           <div id="openFilter" class="group cursor-pointer w-10 h-10 rounded-lg flex-center border border-[#676F71] flex-center transition-all hover:bg-primary">
-             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path class="transition-all group-hover:fill-white" d="M7.29327 15.1C6.97327 15.1 6.65993 15.02 6.3666 14.86C5.77993 14.5334 5.4266 13.94 5.4266 13.2734V9.74002C5.4266 9.40669 5.2066 8.90669 4.99993 8.65336L2.5066 6.01336C2.0866 5.59336 1.7666 4.87336 1.7666 4.33336V2.80002C1.7666 1.73336 2.57327 0.900024 3.59993 0.900024H12.3999C13.4133 0.900024 14.2333 1.72002 14.2333 2.73336V4.20002C14.2333 4.90002 13.8133 5.69336 13.4199 6.08669L10.5333 8.64002C10.2533 8.87336 10.0333 9.38669 10.0333 9.80002V12.6667C10.0333 13.26 9.65993 13.9467 9.19327 14.2267L8.27327 14.82C7.97327 15.0067 7.63327 15.1 7.29327 15.1ZM3.59993 1.90002C3.13327 1.90002 2.7666 2.29336 2.7666 2.80002V4.33336C2.7666 4.58002 2.9666 5.06002 3.21993 5.31336L5.75994 7.98669C6.09994 8.40669 6.43327 9.10669 6.43327 9.73336V13.2667C6.43327 13.7 6.73327 13.9134 6.85993 13.98C7.13994 14.1334 7.47993 14.1334 7.73993 13.9734L8.6666 13.38C8.85327 13.2667 9.03994 12.9067 9.03994 12.6667V9.80002C9.03994 9.08669 9.3866 8.30002 9.8866 7.88002L12.7399 5.35336C12.9666 5.12669 13.2399 4.58669 13.2399 4.19336V2.73336C13.2399 2.27336 12.8666 1.90002 12.4066 1.90002H3.59993Z" fill="#676F71"/>
-<path class="transition-all group-hover:fill-white" d="M4.00044 7.16664C3.9071 7.16664 3.82044 7.13997 3.73377 7.09331C3.50044 6.94664 3.4271 6.63331 3.57377 6.39997L6.86044 1.13331C7.0071 0.899972 7.31377 0.826639 7.5471 0.973306C7.78044 1.11997 7.85377 1.42664 7.7071 1.65997L4.42044 6.92664C4.3271 7.07997 4.1671 7.16664 4.00044 7.16664Z" fill="#676F71"/>
-<script xmlns=""/></svg>
-           </div>
-                      <div class="group cursor-pointer w-10 h-10 rounded-lg flex-center border border-[#676F71] flex-center transition-all hover:bg-primary">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path class="transition-all group-hover:fill-white" d="M14 5.16663H2C1.72667 5.16663 1.5 4.93996 1.5 4.66663C1.5 4.39329 1.72667 4.16663 2 4.16663H14C14.2733 4.16663 14.5 4.39329 14.5 4.66663C14.5 4.93996 14.2733 5.16663 14 5.16663Z" fill="#676F71"/>
-<path class="transition-all group-hover:fill-white" d="M12 8.5H4C3.72667 8.5 3.5 8.27333 3.5 8C3.5 7.72667 3.72667 7.5 4 7.5H12C12.2733 7.5 12.5 7.72667 12.5 8C12.5 8.27333 12.2733 8.5 12 8.5Z" fill="#676F71"/>
-<path class="transition-all group-hover:fill-white" d="M9.33366 11.8334H6.66699C6.39366 11.8334 6.16699 11.6067 6.16699 11.3334C6.16699 11.06 6.39366 10.8334 6.66699 10.8334H9.33366C9.60699 10.8334 9.83366 11.06 9.83366 11.3334C9.83366 11.6067 9.60699 11.8334 9.33366 11.8334Z" fill="#676F71"/>
-<script xmlns=""/></svg>
-           </div>
+            <div id="openFilter"
+              class="group cursor-pointer w-10 h-10 rounded-lg flex-center border border-[#676F71] flex-center transition-all hover:bg-primary">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition-all group-hover:fill-white"
+                  d="M7.29327 15.1C6.97327 15.1 6.65993 15.02 6.3666 14.86C5.77993 14.5334 5.4266 13.94 5.4266 13.2734V9.74002C5.4266 9.40669 5.2066 8.90669 4.99993 8.65336L2.5066 6.01336C2.0866 5.59336 1.7666 4.87336 1.7666 4.33336V2.80002C1.7666 1.73336 2.57327 0.900024 3.59993 0.900024H12.3999C13.4133 0.900024 14.2333 1.72002 14.2333 2.73336V4.20002C14.2333 4.90002 13.8133 5.69336 13.4199 6.08669L10.5333 8.64002C10.2533 8.87336 10.0333 9.38669 10.0333 9.80002V12.6667C10.0333 13.26 9.65993 13.9467 9.19327 14.2267L8.27327 14.82C7.97327 15.0067 7.63327 15.1 7.29327 15.1ZM3.59993 1.90002C3.13327 1.90002 2.7666 2.29336 2.7666 2.80002V4.33336C2.7666 4.58002 2.9666 5.06002 3.21993 5.31336L5.75994 7.98669C6.09994 8.40669 6.43327 9.10669 6.43327 9.73336V13.2667C6.43327 13.7 6.73327 13.9134 6.85993 13.98C7.13994 14.1334 7.47993 14.1334 7.73993 13.9734L8.6666 13.38C8.85327 13.2667 9.03994 12.9067 9.03994 12.6667V9.80002C9.03994 9.08669 9.3866 8.30002 9.8866 7.88002L12.7399 5.35336C12.9666 5.12669 13.2399 4.58669 13.2399 4.19336V2.73336C13.2399 2.27336 12.8666 1.90002 12.4066 1.90002H3.59993Z"
+                  fill="#676F71" />
+                <path class="transition-all group-hover:fill-white"
+                  d="M4.00044 7.16664C3.9071 7.16664 3.82044 7.13997 3.73377 7.09331C3.50044 6.94664 3.4271 6.63331 3.57377 6.39997L6.86044 1.13331C7.0071 0.899972 7.31377 0.826639 7.5471 0.973306C7.78044 1.11997 7.85377 1.42664 7.7071 1.65997L4.42044 6.92664C4.3271 7.07997 4.1671 7.16664 4.00044 7.16664Z"
+                  fill="#676F71" />
+                <script xmlns="" />
+              </svg>
+            </div>
+            <div
+              class="group cursor-pointer w-10 h-10 rounded-lg flex-center border border-[#676F71] flex-center transition-all hover:bg-primary">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="transition-all group-hover:fill-white"
+                  d="M14 5.16663H2C1.72667 5.16663 1.5 4.93996 1.5 4.66663C1.5 4.39329 1.72667 4.16663 2 4.16663H14C14.2733 4.16663 14.5 4.39329 14.5 4.66663C14.5 4.93996 14.2733 5.16663 14 5.16663Z"
+                  fill="#676F71" />
+                <path class="transition-all group-hover:fill-white"
+                  d="M12 8.5H4C3.72667 8.5 3.5 8.27333 3.5 8C3.5 7.72667 3.72667 7.5 4 7.5H12C12.2733 7.5 12.5 7.72667 12.5 8C12.5 8.27333 12.2733 8.5 12 8.5Z"
+                  fill="#676F71" />
+                <path class="transition-all group-hover:fill-white"
+                  d="M9.33366 11.8334H6.66699C6.39366 11.8334 6.16699 11.6067 6.16699 11.3334C6.16699 11.06 6.39366 10.8334 6.66699 10.8334H9.33366C9.60699 10.8334 9.83366 11.06 9.83366 11.3334C9.83366 11.6067 9.60699 11.8334 9.33366 11.8334Z"
+                  fill="#676F71" />
+                <script xmlns="" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -485,11 +500,16 @@
     <section class="mt-[46px]">
       <div class="max-w-content mx-auto px-4">
         <div class="flex xl:gap-7 gap-4">
-          <div id="filterSidebar" class="max-w-[318px] w-full flex-shrink-0 top-0 bottom-0 h-full overflow-auto bg-white shadow-lg lg:shadow-none z-30 lg:z-0 fixed lg:sticky lg:top-5">
+          <div id="filterSidebar"
+            class="max-w-[318px] w-full flex-shrink-0 top-0 bottom-0 h-full overflow-auto bg-white shadow-lg lg:shadow-none z-30 lg:z-0 fixed lg:sticky lg:top-5">
             <div class="px-3 pt-5 flex lg:hidden items-center gap-2 pb-4 border-b border-[#E7E7E8]">
-              <svg id="closeFilter" class="cursor-pointer group" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path class="transition-all group-hover:fill-red-600" d="M16.0675 15.1826C16.1256 15.2406 16.1717 15.3096 16.2031 15.3854C16.2345 15.4613 16.2507 15.5426 16.2507 15.6247C16.2507 15.7069 16.2345 15.7882 16.2031 15.864C16.1717 15.9399 16.1256 16.0089 16.0675 16.0669C16.0095 16.125 15.9405 16.1711 15.8647 16.2025C15.7888 16.2339 15.7075 16.2501 15.6253 16.2501C15.5432 16.2501 15.4619 16.2339 15.386 16.2025C15.3102 16.1711 15.2412 16.125 15.1832 16.0669L10.0003 10.8833L4.81753 16.0669C4.70026 16.1842 4.5412 16.2501 4.37535 16.2501C4.2095 16.2501 4.05044 16.1842 3.93316 16.0669C3.81588 15.9496 3.75 15.7906 3.75 15.6247C3.75 15.4589 3.81588 15.2998 3.93316 15.1826L9.11675 9.99974L3.93316 4.81692C3.81588 4.69965 3.75 4.54059 3.75 4.37474C3.75 4.20888 3.81588 4.04983 3.93316 3.93255C4.05044 3.81527 4.2095 3.74939 4.37535 3.74939C4.5412 3.74939 4.70026 3.81527 4.81753 3.93255L10.0003 9.11614L15.1832 3.93255C15.3004 3.81527 15.4595 3.74939 15.6253 3.74939C15.7912 3.74939 15.9503 3.81527 16.0675 3.93255C16.1848 4.04983 16.2507 4.20888 16.2507 4.37474C16.2507 4.54059 16.1848 4.69965 16.0675 4.81692L10.8839 9.99974L16.0675 15.1826Z" fill="#0B0C17"/>
-<script xmlns=""/></svg>
+              <svg id="closeFilter" class="cursor-pointer group" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="transition-all group-hover:fill-red-600"
+                  d="M16.0675 15.1826C16.1256 15.2406 16.1717 15.3096 16.2031 15.3854C16.2345 15.4613 16.2507 15.5426 16.2507 15.6247C16.2507 15.7069 16.2345 15.7882 16.2031 15.864C16.1717 15.9399 16.1256 16.0089 16.0675 16.0669C16.0095 16.125 15.9405 16.1711 15.8647 16.2025C15.7888 16.2339 15.7075 16.2501 15.6253 16.2501C15.5432 16.2501 15.4619 16.2339 15.386 16.2025C15.3102 16.1711 15.2412 16.125 15.1832 16.0669L10.0003 10.8833L4.81753 16.0669C4.70026 16.1842 4.5412 16.2501 4.37535 16.2501C4.2095 16.2501 4.05044 16.1842 3.93316 16.0669C3.81588 15.9496 3.75 15.7906 3.75 15.6247C3.75 15.4589 3.81588 15.2998 3.93316 15.1826L9.11675 9.99974L3.93316 4.81692C3.81588 4.69965 3.75 4.54059 3.75 4.37474C3.75 4.20888 3.81588 4.04983 3.93316 3.93255C4.05044 3.81527 4.2095 3.74939 4.37535 3.74939C4.5412 3.74939 4.70026 3.81527 4.81753 3.93255L10.0003 9.11614L15.1832 3.93255C15.3004 3.81527 15.4595 3.74939 15.6253 3.74939C15.7912 3.74939 15.9503 3.81527 16.0675 3.93255C16.1848 4.04983 16.2507 4.20888 16.2507 4.37474C16.2507 4.54059 16.1848 4.69965 16.0675 4.81692L10.8839 9.99974L16.0675 15.1826Z"
+                  fill="#0B0C17" />
+                <script xmlns="" />
+              </svg>
               <p class="text-[#23242E]">فیلترها</p>
             </div>
             <form class="sticky top-5 lg:border border-[#D1D4D4] lg:border-b-4 rounded-2xl px-3 py-6">
@@ -666,40 +686,23 @@
                     </svg>
                   </div>
                   <div class="accordionContent2">
-                    <div class="pt-4">
-                      <div class="relative">
-                        <div class="h-0.5 bg-[#CECED1]"></div>
-                        <div class="flex items-center absolute right-0 top-0 bottom-0">
-                          <div class="w-2 h-2 rounded-full bg-[#59493B] cursor-pointer"></div>
-                          <div class="h-0.5 bg-[#6D6D74] w-11"></div>
-                          <div class="w-2 h-2 rounded-full bg-[#59493B] cursor-pointer"></div>
-                        </div>
-                      </div>
-                      <div class="mt-4 flex items-center justify-between gap-[18px]">
-                        <div
-                          class="py-[11px] px-[18px] flex items-center justify-center gap-1 rounded-lg border border-[#CECED1] text-[#6D6D74] text-xs">
-                          <p>1,000,000</p>
-                          <p>تومان</p>
-                        </div>
-                        <p class="text-[#9D9EA2] text-sm flex-shrink-0">تا</p>
-                        <div
-                          class="py-[11px] px-[18px] flex items-center justify-center gap-1 rounded-lg border border-[#CECED1] text-[#6D6D74] text-xs">
-                          <p>5,000,000</p>
-                          <p>تومان</p>
-                        </div>
-                      </div>
+                    <div class="pt-10 px-7">
+                      <input type="text" id="slider" class="slider" class="slider w-100">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="mt-[30px] lg:hidden flex items-center justify-between gap-[10px]">
                 <button class="text-[#9D9EA2] rounded-lg bg-[#E7E7E8] h-12 w-1/2 flex-grow px-2">انصراف</button>
-                <button class="text-white rounded-lg bg-primary transition-all hover:bg-secondary h-12 w-1/2 flex-grow px-2">اعمال فیلتر</button>
+                <button
+                  class="text-white rounded-lg bg-primary transition-all hover:bg-secondary h-12 w-1/2 flex-grow px-2">اعمال
+                  فیلتر</button>
               </div>
             </form>
           </div>
           <div class="flex-grow">
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-x-[21px] gap-y-[61px] md:gap-y-[88px]">
+            <div
+              class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-x-[21px] gap-y-[61px] md:gap-y-[88px]">
               <a>
                 <div
                   class="rounded-2xl border border-gray p-4 pb-5 pt-4 border-b-4 hover:border-primary transition-all">
@@ -1308,6 +1311,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/rSlider.min.js"></script>
   <script src="../js/filter.js"></script>
 </body>
 

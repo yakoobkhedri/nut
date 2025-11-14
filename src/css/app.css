@@ -286,6 +286,29 @@ a {
 .mySwiper .swiper-slide-visible.swiper-slide-thumb-active{
     opacity: 100%;
 }
+/* range input */
+.rs-container {
+    font-family: YekanBakh-Regular !important;
+}
+.rs-container .rs-pointer {
+  background-color: #3d5a43 !important;
+  border: none!important;
+  border-radius: 100%!important;
+  height: 18px!important;
+  width: 18px!important;
+  box-shadow: none!important;
+}
+.rs-container .rs-pointer::after, .rs-container .rs-pointer::before {
+  content: none !important;
+}
+.rs-container .rs-selected {
+  background-color: #3d5a43 !important;
+  border: 1px solid #3d5a43 !important;
+}
+.rs-container .rs-bg, .rs-container .rs-selected {
+  height: 3px !important;
+  top: 8px !important;
+}
 /* error */
 .error{
   transition: all .4s;
