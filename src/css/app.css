@@ -179,8 +179,21 @@ a {
 .transition {
   @apply transition-all duration-300;
 }
+/* search modal */
 
-#overlay {
+#searchModal{
+  transition: all .4s;
+  top: 40px;
+  opacity: 0;
+  visibility: hidden;
+}
+#searchModal.active{
+  top: 0px;
+  opacity: 100%;
+  visibility: visible;
+}
+/*  */
+#overlay,#overlay2 {
   backdrop-filter: blur(19.600000381469727px);
   position: fixed;
   background: #FFFFFF70;
@@ -194,7 +207,7 @@ a {
   cursor: pointer;
 }
 
-#overlay.active {
+#overlay.active,#overlay2.active {
   opacity: 100%;
   visibility: visible;
 }

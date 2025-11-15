@@ -175,6 +175,20 @@ accordionBtn2.forEach((item)=>{
   })
 });
 
-// datapicker
+// search
 
-jalaliDatepicker.startWatch();
+let openSearch = Array.from(document.getElementsByClassName('openSearch'));
+let searchModal = document.getElementById('searchModal');
+let overlay2 = document.getElementById('overlay2');
+
+openSearch.forEach((item)=>{
+  item.addEventListener('click',function () {
+    searchModal.classList.add('active');
+    overlay2.classList.add('active');
+  });
+})
+
+overlay2.addEventListener('click',function () {
+  searchModal.classList.remove('active');
+  overlay2.classList.remove('active');
+});
