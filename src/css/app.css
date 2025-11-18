@@ -450,7 +450,18 @@ header .absolute.top-4.z-10.duration-500.transition-all.opacity-0{
 header ul li a.active {
   @apply text-primary;
 }
-
+/* login */
+.loginbody{
+  background-image: url('../src/img/Asset 1mdpi copy 1 (3).png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+/* footer */
+footer{
+  background-image: url('../src/img/Asset 1mdpi copy 1 (2).png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
 /* responsive */
 
 @media (max-width: 1280px) {
@@ -467,4 +478,15 @@ header ul li a.active {
     #filterSidebar.active{
     right: 0;
   }
+}
+
+@media (max-width: 640px) {
+  .loginbody{
+    background-image: none;
+  }
+}
+@media (max-width: 576px) {
+footer{
+  background-image: url('../src/img/Frame 1890167202.png');
+}
 }
