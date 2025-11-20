@@ -480,6 +480,14 @@ footer{
   }
 }
 
+@media (max-width: 768px) {
+  footer > div:first-child > svg:first-child{
+    top: -65px;
+  }
+    footer > div:first-child > a{
+    top: -80px;
+  }
+}
 @media (max-width: 640px) {
   .loginbody{
     background-image: none;
